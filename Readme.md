@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Алексей Алешин](https://up.htmlacademy.ru/htmlcss/33/user/1999673).
-* Наставник: `Неизвестно`.
+* Студент: [Алексей Алешин](https://htmlacademy.ru/profile/id1999673).
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er).
 
 ---
 
