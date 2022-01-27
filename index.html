@@ -5,19 +5,20 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-      <header class="page_header">
+      <header class="page-header">
         <div class="wrapper">
-          <div class="header_logo">
-            <a href="" class="header_logo_link">
-              <img src="./img/logo.svg" alt="Логотип интернет магазина Device" class="header_logo_pic">              
+          <div class="header-logo">
+            <a href="" class="header-logo-link">
+              <img src="./img/logo.svg" alt="Логотип интернет магазина Device" class="header-logo-pic">              
             </a>
           </div>
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <label class="header_login">
-                   <input type="text" class="form-control" name="query" placeholder="Текст поиска" autocomplete="off">
-                   Найти</label>
+                <form>
+                  <input type="search" class="form-control" name="query" placeholder="Текст поиска" autocomplete="off">
+                  <input type="submit" value="Найти">
+                   </form>
               </li>
               <li class="navigation-item">
                     <a class="navigation-link" href="">Войти</a>
@@ -58,8 +59,6 @@
         <a class="property-first" href="">Подробнее</a>
         <ul class="slider-picture-list">
           <li>
-              <input type="radio" id="property1" name="property-one" checked="">
-              <label for="slide1"></label>
               <table class=characteristic>
                 <tr>
                   <th class=characteristic-name>800 м</th>
@@ -68,40 +67,12 @@
                 <tr>
                    <td class=characteristic-title>Дальность полета<td>
                   <td class=characteristic-title>Радиус поражения</td>
-                </td>
-              </table>
-          </li>
-          <li>
-              <input type="radio" id="property2" name="property-two">
-              <label for="slide2"></label>
-              <table class=characteristic>
-                <tr>
-                  <th class=characteristic-name>800 м</th>
-                  <th class=characteristic-name>50 м</th>
                 </tr>
-                <tr>
-                   <td class=characteristic-title>Дальность полета<td>
-                  <td class=characteristic-title>Радиус поражения</td>
-                </td>
-              </table>
-          </li>
-          <li>
-              <input type="radio" id="property-3" name="property-three">
-              <label for="slide3"></label>
-              <table class=characteristic>
-                <tr>
-                  <th class=characteristic-name>800 м</th>
-                  <th class=characteristic-name>50 м</th>
-                </tr>
-                <tr>
-                   <td class=characteristic-title>Дальность полета<td>
-                  <td class=characteristic-title>Радиус поражения</td>
-                </td>
               </table>
           </li>          
       </ul>
     </div>
-    <div class="slaider">
+    <div class="slider">
       <h3 class="visually-hidden">Фото товара</h3>
       <img class="slider-image" src="" alt="Фото товара">
       <button class="slider-button slider-prev" type="button">
@@ -127,6 +98,11 @@
           </button>
         </li>
       </ol>
+    </div>
+    <div class="swiper-pagination">
+    <input class="slider-radio" id="1" type="radio" checked>
+    <input class="slider-radio" id="2" type="radio">
+    <input class="slider-radio" id="3" type="radio">
     </div>
     </section>
     <section class="catalog-categories">
@@ -181,16 +157,17 @@
     </section>
     <section class="delivery">
       <h2 class="visually-hidden">Доставка редкого товара</h2>
-      <ul class="deliver-list">
-        <li class="delivery-item-icon">
+      <div class="deliver-list">
+        <div class="delivery-item-icon">
           <img src="" alt="доставка редкого товара">
-        </li>
-        <li class="delivery-item-title">
+        </div>
+        <div class="delivery-item-title">
           <h3 class="delivery">Доставим редкий товар под заказ</h3>
-        </li>
-        <li class="delivery-item-link">
+        </div>
+        <div class="delivery-item-link">
           <a class=delivery-link href="#"><img src="" alt=""></a>
-        </li>
+        </div>
+      </div>
     </section>
     <section class="about-us">
       <h2 class="about-us-title">О нас</h2>
