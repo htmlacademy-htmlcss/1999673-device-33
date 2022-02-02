@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -20,18 +21,18 @@
                 <input type="submit" value="Найти">
               </form>
             </li>
-            <li class="navigation-item"><a class="login-buttom" href="">Коля Петухов</a></li>
-            <li class="navigation-item"><a class="login-exit-buttom" href="">Выйти</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="">Коля Петухов</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="">Выйти</a></li>
             <li class="navigation-item"><a class="navigation-compare" href="">Сравнить</a></li>
             <li class="navigation-item"><a class="navigation-link" href=""><span class="visually-hidden">Корзина</span></a></li>
           </ul>
           <ul class="header-catalog-list">
-            <li class="navigation-item"><a>Каталог товаров</a></li>
+            <li class="navigation-catalog-item"><a class="navigation-catalog-link">Каталог товаров</a></li>
           </ul>
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link" href="">Доставка</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="">Гарантия</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="">Контакты</a></li>
+            <li class="navigation-services-item"><a class="navigation-services-link" href="">Доставка</a></li>
+            <li class="navigation-services-item"><a class="navigation-services-link" href="">Гарантия</a></li>
+            <li class="navigation-services-item"><a class="navigation-services-link" href="">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -48,9 +49,9 @@
       <section class="catalog-products">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <h3>Фильтр</h3>
+          <h3 class="catalog-filter-title">Фильтр</h3>
           <fieldset class="catalog-fiter-cost">
-            <legend class="catalog-filter-title">Стоимость</legend>
+            <legend class="catalog-filter-price">Стоимость</legend>
             <div class="price-controls">
               <label for="name">от 0</label>
               <input class="min-price" type="text" value="">
@@ -59,7 +60,7 @@
             </div>
           </fieldset>  
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
+            <legend class="catalog-filter-color">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -89,7 +90,7 @@
             </ul>
           </fieldset>  
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-option">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -101,9 +102,9 @@
                 </li>                
               </ul>
           </fieldset>  
-            <button class="button" type="submit">Показать</button>
+            <button class="property-first-link" type="submit">Показать</button>
         </form>  
-        <h3>Сортировка</h3>
+        <h3 class="catalog-filter-title">Сортировка</h3>
         <select class="select-control" aria-label="Сортировка">            
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -168,25 +169,27 @@
         <h2 class="visually-hidden">Контакты</h2>
         <img class="footer-contacts-logo" src="image/logo-footer.svg" alt="Логотип интернет магазина Девайс" width="145" height="36">
         <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
-        <div class="footer-sitelinks">
-          <ul class="footer-sitelinks-list">
-            <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Доставка</a></li>
-            <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Гарантия</a></li>
-            <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-            <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Twitter</span></a></li>
-          </ul>        
-        </div>    
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>   
+          <div class="footer-sitelinks">
+            <ul class="footer-sitelinks-list">
+              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Доставка</a></li>
+              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Гарантия</a></li>
+              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+              <h2 class="visually-hidden">Социальные сети</h2>
+              <ul class="footer-social-list">
+                <li class="footer-social-item"><a class="footer-social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+                <li class="footer-social-item"><a class="footer-social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+                <li class="footer-social-item"><a class="footer-social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+              </ul>        
+          </div>
+          <div class=footer-html>    
+            <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+          </div>  
       </section>        
     </footer>
   </body>
