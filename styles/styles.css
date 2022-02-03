@@ -1,0 +1,377 @@
+  @font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/rubik/rubik-800.woff2") format("woff2");
+    font-display: swap;
+  }
+  body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;    
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+    background-color: #FFFFFF;    
+  } 
+  /* Header */
+  .page-header {
+    color: #000000;
+    background-color: #FFE17F;    
+  }
+  .navigation-item {
+    list-style-type: none;
+  }
+  .navigation-catalog-item, .navigation-services-item {
+    list-style-type: none;
+  }
+  .navigation-link, .navigation-compare {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;    
+  }
+  .navigation-catalog-link, .navigation-services-link {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;    
+  }
+  /* Header */
+  .main-index{
+    background-color:#FFFFFF;
+    background-size: 100% auto;
+  }
+  .breadcrumbs-link {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;    
+  }
+  /* Хлебные крошки */
+  .breadcrumbs-item {
+    list-style-type: none;
+  }
+  /*категории catalog */  
+  .catalog-products {
+    background-color: #F0F0F0;
+  }
+  .product-list {
+    background-color: #FFFFFF;
+  }
+  .catalog-filter-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .property-first-title, .inner-header-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    color: #000000;
+  }
+  .property-first-text {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .property-first-link {    
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;    
+    background-image: url("../image/image-main/substrate.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  .characteristic {
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .characteristic-name {
+    font-size: 36px;    
+    color: #000000;
+  }
+  .characteristic-title {
+    font-size: 16px;
+    color: #444444;    
+  } 
+  /* Категории main */
+  .virtual-reality {    
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/image-main/virtual-reality.svg");
+    background-color: #FFE17F;    
+    background-repeat: no-repeat;
+  }
+  .monopods-for-selfies {
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/image-main/monopods-for-selfies.svg");
+    background-color: #FFE17F;    
+    background-repeat: no-repeat;
+  }
+  .action-cameras {
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/image-main/action-cameras.svg");
+    background-color: #FFE17F;    
+    background-repeat: no-repeat;
+  }
+  .fitness-bracelets {
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/image-main/fitness-bracelets.svg");
+    background-color: #FFE17F;    
+    background-repeat: no-repeat;
+  }
+  .smart-watches {
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/image-main/smart-watches.svg");
+    background-color: #FFE17F;    
+    background-repeat: no-repeat;
+  }
+  .quadrocopters {
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/image-main/quadrocopters.svg");
+    background-color: #FFE17F;    
+    background-repeat: no-repeat;
+  }
+  .catalog-categories-item, .catalog-categories-link {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;    
+    color: #000000;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .pagination-show-more {
+    background-color: #FFFFFF;
+  }
+  .product-card-link, .product-card {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .product-card-price {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .services-link {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;    
+    color:#000000;
+    text-decoration: none;
+    text-transform: uppercase;    
+    background-image: url("../image/image-main/substrate.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    list-style-type: none;
+  }
+  .services-link-buttom {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;    
+    color:#FFE17F;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;    
+    list-style-type: none;
+  }
+  .services-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #000000;
+  }
+  .services-description {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .delivery-icon {
+    width: 125px;
+    height: 100px;
+    background-color: #FFE17F;
+    background-image: url("../image/image-main/express-delivery.svg");
+    background-repeat: no-repeat;
+  }
+  .delivery-item-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23px;
+    color: #000000;
+    background-color: #F0F0F0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* О нас и Контакты */
+  .about-us-title, .contacts-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #000000;
+  }
+  .about-description, .contacts-description {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+  }
+  .about-us-item {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .more-about-us, .button-feedback {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;    
+    background-image: url("../image/image-main/substrate.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  .contacts-subtitle {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #444444;
+  }
+.contacts-address-text, .contacts-schedule-item {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+  list-style-type: none;
+}
+.contacts-phone {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #444444;
+}
+.subscribe {  
+  width: 100%;
+  background-color: #F0F0F0;
+}
+.subscribe-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;  
+  color: #000000;
+}
+.subscribe-description {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+}
+/* Footer */
+.page-footer {
+  font-family: "Rubik", sans-serif;  
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #444444;
+}
+.footer-about-text, .footer-contacts-address-phone {
+  font-style: normal;  
+  color: #FFFFFF;
+}
+.footer-sitelinks-item, .footer-sitelinks-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;  
+  list-style-type: none;
+}
+.footer-social-item, .footer-social-button {
+  color: #FFFFFF;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.htmlacademy-link {
+  color:#FFC700;
+  text-decoration: none;
+}
+/* Footer */
