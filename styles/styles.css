@@ -27,7 +27,14 @@
     src: url("fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
   }
+  html {
+    height: 100%;
+  }
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;    
     line-height: 30px;
@@ -35,10 +42,51 @@
     color: #444444;
     background-color: #FFFFFF;    
   } 
+  .visually-hidden {
+    visibility: hidden;
+  }
   /* Header */
   .page-header {
     color: #000000;
-    background-color: #FFE17F;    
+    background-color: #FFE17F; 
+    width: 1040px; 
+    height: 186px; 
+    margin: 17px auto;       
+  }
+  .page-catalog-header {
+    color: #000000;
+    background-color: #FFE17F; 
+    width: 1160px; 
+    height: 186px; 
+    margin: 40px auto; 
+  }
+  .header-logo {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .header-logo-catalog {
+    width:145px;
+    margin-left: 60px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;   
+    margin: 0;
+    padding: 0;    
+  }  
+  .navigation-list {
+    display: flex;
+    flex-direction: row;
+    width: 1040px;
+    justify-content: space-between;
+    padding-left: 0;
+  }  
+  .navigation-services {
+    display: flex;
+    flex-direction: row;
+    width: 1040px;
+    justify-content: space-between;
+    padding-left: 0;
   }
   .navigation-item {
     list-style-type: none;
@@ -63,11 +111,62 @@
     text-decoration: none;
     text-transform: uppercase;    
   }
+  .main-container {
+    flex-grow: 1;
+  }
   /* Header */
-  .main-index{
+  .main-index {
     background-color:#FFFFFF;
     background-size: 100% auto;
+  }   
+  .visually-hidden {
+    margin: 0 auto;
+    text-align: center;
   }
+  .property-first {
+    width: 1160px;
+    height: 750px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .slider {
+  width: 560px;
+  height: 560px;
+  }
+  .property-one {
+    width: 560px;
+    height: 401px;
+  }
+  .background-first {
+    background-color:#FFE17F;
+    width: 1160px;
+    height: 300px;
+    margin-left: 140px;
+    margin-right: 140px; 
+    font-family: "Rubik", sans-serif;
+    font-size: 180px;
+    text-align: right;
+    line-height: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 17px auto;
+}  
+  .number-product {
+    font-family: "Rubik", sans-serif;
+    font-size: 180px;
+    text-align: right;
+    line-height: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 179px;
+    padding-left: 861px;
+    padding-right: 49px;
+    padding-bottom: 0px; 
+    margin-block-end: 0px;   
+    margin-top: 0px;
+}
   .breadcrumbs-link {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
@@ -76,10 +175,34 @@
     color: #000000;
     text-decoration: none;    
   }
+  /*стили каталог*/
+  .catalog-products {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+  }   
+  .filter-conteiner {
+    width: 320px;
+    margin-left: 0px;
+    padding-left: 140px;
+  }
+  .catalog-cart-pagination {
+    width: 840px;
+    margin-right: 0px;
+    padding-right: 140px;
+  }
+  /*----------*/
+  .inner-header {
+    width: 1079px;
+    margin: 0 auto;
+  }  
+      
   /* Хлебные крошки */
   .breadcrumbs-item {
     list-style-type: none;
-  }
+  }    
   /*категории catalog */  
   .catalog-products {
     background-color: #F0F0F0;
@@ -136,12 +259,28 @@
     color: #444444;    
   } 
   /* Категории main */
+  .catalog-categoriest-list {
+    width: 1160px;
+    height: 253px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 0px;
+  }  
+  .catalog-title {
+    width: 160px;
+    height: 60px;
+    word-wrap: break-word;
+  }
   .virtual-reality {    
     width: 160px;
     height: 160px;
     background-image: url("../image/image-main/virtual-reality.svg");
     background-color: #FFE17F;    
     background-repeat: no-repeat;
+    background-position: center;
   }
   .monopods-for-selfies {
     width: 160px;
@@ -149,6 +288,7 @@
     background-image: url("../image/image-main/monopods-for-selfies.svg");
     background-color: #FFE17F;    
     background-repeat: no-repeat;
+    background-position: center;
   }
   .action-cameras {
     width: 160px;
@@ -156,6 +296,7 @@
     background-image: url("../image/image-main/action-cameras.svg");
     background-color: #FFE17F;    
     background-repeat: no-repeat;
+    background-position: center;
   }
   .fitness-bracelets {
     width: 160px;
@@ -163,6 +304,7 @@
     background-image: url("../image/image-main/fitness-bracelets.svg");
     background-color: #FFE17F;    
     background-repeat: no-repeat;
+    background-position: center;
   }
   .smart-watches {
     width: 160px;
@@ -170,6 +312,7 @@
     background-image: url("../image/image-main/smart-watches.svg");
     background-color: #FFE17F;    
     background-repeat: no-repeat;
+    background-position: center;
   }
   .quadrocopters {
     width: 160px;
@@ -177,6 +320,7 @@
     background-image: url("../image/image-main/quadrocopters.svg");
     background-color: #FFE17F;    
     background-repeat: no-repeat;
+    background-position: center;
   }
   .catalog-categories-item, .catalog-categories-link {
     font-family: "Raleway", sans-serif;
@@ -206,43 +350,102 @@
     font-weight: 400;
     color: #444444;
   }
-  .services-link {
+  /*сервисы*/
+  .services {
+    width: 1440px;
+    height: 391px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .tabs { 
+    width: 1160px; 
+    height: 319px;     
+    margin: 0 auto;    
+    position: relative; 
+    border: 1px solid #DEE8F2; 
+  } 
+  .services-tab { 
+    display: none;  
+    padding: 15px; 
+    background: white; 
+    position: absolute; 
+    top: 0; 
+    left: 280px; 
+  } 
+  .services-description {
+    margin-left: 100px;
+
+  }
+  input { 
+    display: none; 
+  } 
+  .service-tabs { 
+    display: block; 
+    width: 240px; 
+    padding: 15px;     
+    background: #FFFFFF; 
+    cursor: pointer; 
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;    
-    color:#000000;
+    line-height: 21px;
+    text-align: center;    
+    border-right: 7px solid #000000;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;    
+    list-style-type: none;
     background-image: url("../image/image-main/substrate.svg");
     background-repeat: no-repeat;
     background-position-y: center;
+    background-position-x: center;
     list-style-type: none;
-  }
-  .services-link-buttom {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 21px;    
-    color:#FFE17F;
-    background-color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;    
-    list-style-type: none;
-  }
+  } 
+  input:checked + label { 
+    color: #FFE17F; 
+    background: #000000; 
+  } 
+  #tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { 
+    display: block; 
+  }  
+  .services-tab {
+    width: 694px;
+    height: 174px;
+    background-image: url("../image/image-main/delivery.svg"); 
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    list-style-type: none;   
+  } 
   .services-title {
     font-family: "Raleway", sans-serif;
+    margin-left: 123px;
     font-size: 50px;
     font-weight: 800;
     line-height: 50px;
     color: #000000;
-  }
+  }    
   .services-description {
     font-family: "Rubik", sans-serif;
+    width: 448px;
+    height: 90px;
     font-size: 18px;
+    margin-left: 123px;
     line-height: 30px;
     font-weight: 400;
     color: #444444;
+  }
+  /*быстрая доставка*/
+  .delivery { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 70px;
+    flex-direction: row;    
+    width: 1160px;
+    height: 100px;  
+    margin: 0 auto;  
   }
   .delivery-icon {
     width: 125px;
@@ -250,18 +453,63 @@
     background-color: #FFE17F;
     background-image: url("../image/image-main/express-delivery.svg");
     background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    list-style-type: none;
   }
   .delivery-item-title {
+    width: 910px;
+    padding-top: 15px;
     font-family: "Raleway", sans-serif;
+    height: 85px;    
     font-size: 20px;
     font-weight: 800;
-    line-height: 23px;
+    line-height: 23px;    
     color: #000000;
     background-color: #F0F0F0;
     text-align: center;
     text-transform: uppercase;
+    text-align: center;
+  }  
+  
+  .delivery-blok {
+    width: 125px;
+    height: 100px;
+    background-color: #F0F0F0;      
+  }
+  .delivery-link {
+    width: 40px;
+    height: 40px;
+    background-color: #DCDCDC;
+    text-align: center;
+    border-radius: 50%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-image: url("../image/image-main/i-vector.svg");    
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    list-style-type: none;  
+
+  }  
+  .index-columns {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;  
+   flex-wrap: wrap; 
+   color: #000000;
+   background-color: #FFFFFF; 
+   margin: 0 auto; 
+   align-content: flex-start; 
+   column-gap: 108px;  
   }
   /* О нас и Контакты */
+  .about-us {
+    text-transform: uppercase;
+    width: 520px;    
+  }
   .about-us-title, .contacts-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -296,6 +544,10 @@
     background-repeat: no-repeat;
     background-position-y: center;
   }
+  .contacts {
+    text-transform: uppercase;
+    width: 532px;
+  }
   .contacts-subtitle {
     font-family: "Rubik", sans-serif;
     font-size: 24px;
@@ -324,20 +576,41 @@
   width: 100%;
   background-color: #F0F0F0;
 }
+.subscribe-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #F0F0F0; 
+  list-style: none;
+
+}
 .subscribe-title {
   font-family: "Raleway", sans-serif;
+  width: 348px; 
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;  
   color: #000000;
+  margin-top: 64px;
+  text-align: left;  
 }
 .subscribe-description {
+  width: 560px;  
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+  margin-left: 252px;
+  margin-top: 74px;
+}
+.newsletter-form-container {
+  width: 1158px;
+  margin: 0 auto;
 }
 /* Footer */
 .page-footer {
@@ -347,6 +620,22 @@
   font-weight: 400;
   color: #FFFFFF;
   background-color: #444444;
+}
+.footer-conteiner {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+.footer-contacts {
+  width: 234px;
+  margin-right: 140px;
+}
+.footer-sitelinks {
+  width: 444px;  
+}
+.footer-html {
+  width: 175px;
+  margin-left: 140px;
 }
 .footer-about-text, .footer-contacts-address-phone {
   font-style: normal;  
