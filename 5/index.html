@@ -7,8 +7,8 @@
     <base href="https://htmlacademy-htmlcss.github.io/1999673-device-33/5/">
 </head>
   <body>
-    <header class="page-header">
-      <div class="wrapper">
+    <header class="wrapper">
+      <div class="page-header">
         <div class="header-logo">
           <a href="" class="header-logo-link">
           <img src="./image/logo.svg" alt="Логотип интернет магазина Device" width="145" height="36">              
@@ -34,11 +34,11 @@
           </ul>
         </nav>
       </div>
+      <div class="background-first">
+        <p class=number-product>01</p>
+      </div>
     </header>
-    <main class="main-container main-index">      
-        <div class="background-first">
-          <p class=number-product>01</p>
-        </div>
+    <main class="main-container main-index">        
         <h1 class="visually-hidden">Интернет магазин Девайс товаров</h1>
       <div class="conteiner">
         <section class="property-first">        
@@ -61,8 +61,7 @@
              </li>          
            </ul>
          </div>
-         <div class="slider">
-           <h3 class="visually-hidden">Фото товара</h3>
+         <div class="slider">           
            <img class="slider-image" src="image/image-main/slider-1.png" alt="Фото товара" width="560" height="560">
            <button class="slider-prev" type="button"><span class="">предыдущее фото</span></button>
            <button class="slider-next" type="button"><span class="">следующее фото</span></button>
@@ -86,35 +85,34 @@
        <section class="catalog-categories">
          <h2 class="visually-hidden">Список категорий каталога</h2>
          <ul class="catalog-categoriest-list">
-           <li class="catalog-categories-item">  
-               <div class="virtual-reality"></div>         
-               <a class="catalog-categories-link" href="">                       
+           <li class="catalog-categories-item">
+               <a class="catalog-categories-link" href="">  
+               <div class="virtual-reality"></div>                                      
                <p class=catalog-title>Виртуальная реальность</p></a>              
            </li>
            <li class="catalog-categories-item">
-             <div class="monopods-for-selfies"></div> 
-             <a class="catalog-categories-link" href="">            
+             <a class="catalog-categories-link" href="">
+             <div class="monopods-for-selfies"></div>                       
              <p class=catalog-title>Моноподы для селфи</p></a>
            </li>
            <li class="catalog-categories-item">
-             <div class="action-cameras"></div> 
-             <a class="catalog-categories-link" href="">            
+            <a class="catalog-categories-link" href="">
+             <div class="action-cameras"></div>                         
              <p class=catalog-title>Экшн-камеры</p></a>
            </li>
            <li class="catalog-categories-item">
-             <div class="fitness-bracelets"></div>
-             <a class="catalog-categories-link" href="">                     
+             <a class="catalog-categories-link" href=""> 
+             <div class="fitness-bracelets"></div>                                
              <p class=catalog-title>Фитнес-браслеты</p></a>
            </li>
            <li class="catalog-categories-item">
-             <div class="smart-watches"></div>
-             <a class="catalog-categories-link" href="">
-              <p class=catalog-title>Умные часы</p>
-             </a>
+             <a class="catalog-categories-link" href=""> 
+             <div class="smart-watches"></div>             
+             <p class=catalog-title>Умные часы</p></a>
            </li>
            <li class="catalog-categories-item">
-             <div class="quadrocopters"></div>
-             <a class="catalog-categories-link" href="">           
+             <a class="catalog-categories-link" href="">
+             <div class="quadrocopters"></div>                       
              <p class=catalog-title>Квадрокоптеры</p></a>
            </li>
          </ul>
@@ -167,11 +165,11 @@
          <section class="about-us">                  
            <h2 class="about-us-title">О нас</h2>
            <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+           <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
            <ul class=about-us-list>      
-             <li class="about-us-item">Меловые линии</li>
-             <li class="about-us-item">СДИК</li>
-             <li class="about-us-item">ТоксБерри</li>
+             <li class="about-li"><span class="about-us-item">Меловые линии</span></li>
+             <li class="about-li"><span class="about-us-item">СДИК</span></li>
+             <li class="about-li"><span class="about-us-item">ТоксБерри</span></li>
            </ul>
            <a class="more-about-us" href="#">Подробнее о нас</a>      
          </section>
