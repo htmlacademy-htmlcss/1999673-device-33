@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-catalog-header">
-      <div class="wrapper">
+      <div class="wrapper-catalog">
         <div class="header-logo-catalog">
           <a href="index.html" class="header-logo-link">
           <img src="./image/logo.svg" alt="Логотип интернет магазина Device" width="145" height="36">              
@@ -16,7 +16,7 @@
         <nav class="navigation">
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <form>
+              <form action="" method="post" class="navigation-search">
                 <input type="search" name="query" placeholder="Текст поиска" autocomplete="off">
                 <input type="submit" value="Найти">
               </form>
@@ -106,14 +106,18 @@
           </div>
           <div class="catalog-cart-pagination"> 
             <div class="catalog-pagination-conteiner">
-              <h3 class="catalog-filter-title">Сортировка</h3>
+              <div class="filter-sort-title">
+                <h3 class="catalog-filter-title">Сортировка</h3>
+              </div>
               <select class="select-control" aria-label="Сортировка">            
                <option value="popular">Сначала популярное</option>
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
-              <a href="#" class="button button-light"><span class="visually-hidden">Сортировать вверх</span></a>
-              <a class="button" href="#"><span class="visually-hidden">Сортировать вниз</span></a>  
+              <div class="sort-up-down">
+                <a href="#" class="button button-light"><span class="visually-hidden">Сортировать вверх</span></a>
+                <a class="button" href="#"><span class="visually-hidden">Сортировать вниз</span></a> 
+              </div> 
             </div> 
             <div class="catalog-product-conteiner">              
               <ul class="product-list">
@@ -129,7 +133,7 @@
                   <article class="product-card">
                     <a class="product-card-link" href="#">
                     <img class="product-card-image" src="image/image-catalog/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                    <h3 class="product-card-title">Профессиональная селфи-палка</h3></a>
+                    <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3></a>
                     <b class="product-card-price">1500 ₽</b>  
                   </article>           
                 </li>

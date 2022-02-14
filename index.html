@@ -16,7 +16,7 @@
         <nav class="navigation">
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <form>
+              <form action="" method="post" class="navigation-search">
                 <input type="search" name="query" placeholder="Текст поиска" autocomplete="off">
                 <input type="submit" value="Найти">
               </form>
@@ -42,9 +42,23 @@
       <div class="conteiner">
         <section class="property-first">        
          <div class="property-one">
-           <h2 class="property-first-title">Порхает как бабочка, жалит как пчела!</h2>
+           <h2 class="property-first-title">Порхает как бабочка,жалит как пчела!</h2>
            <p class="property-first-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
            <a class="property-first-link" href="">Подробнее</a>
+           <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="">1 фото</span></button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                <span class="">2 фото</span></button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                <span class="">3 фото</span></button>
+              </li>
+            </ol>
            <ul class="slider-picture-list">
              <li>
                 <table class=characteristic>
@@ -64,21 +78,7 @@
            <img class="slider-image" src="image/image-main/slider-1.png" alt="Фото товара" width="560" height="560">
            <button class="slider-prev" type="button"><span class="">предыдущее фото</span></button>
            <button class="slider-next" type="button"><span class="">следующее фото</span></button>
-           <ol class="slider-pagination">
-             <li class="slider-pagination-item">
-               <button class="slider-pagination-button slider-pagination-button-current" type="button">
-               <span class="">1 фото</span></button>
-             </li>
-             <li class="slider-pagination-item">
-               <button class="slider-pagination-button" type="button">
-               <span class="">2 фото</span></button>
-             </li>
-             <li class="slider-pagination-item">
-               <button class="slider-pagination-button" type="button">
-               <span class="">3 фото</span></button>
-             </li>
-           </ol>
-         </div>    
+           </div>    
        </section>
       </div>
        <section class="catalog-categories">
@@ -87,32 +87,32 @@
            <li class="catalog-categories-item">
                <a class="catalog-categories-link" href="">  
                <div class="virtual-reality"></div>                                      
-               <p class=catalog-title>Виртуальная реальность</p></a>              
+               <p class="catalog-title">Виртуальная реальность</p></a>              
            </li>
            <li class="catalog-categories-item">
              <a class="catalog-categories-link" href="">
              <div class="monopods-for-selfies"></div>                       
-             <p class=catalog-title>Моноподы для селфи</p></a>
+             <p class="catalog-title">Моноподы для селфи</p></a>
            </li>
            <li class="catalog-categories-item">
             <a class="catalog-categories-link" href="">
              <div class="action-cameras"></div>                         
-             <p class=catalog-title>Экшн-камеры</p></a>
+             <p class="catalog-title">Экшн-камеры</p></a>
            </li>
            <li class="catalog-categories-item">
              <a class="catalog-categories-link" href=""> 
              <div class="fitness-bracelets"></div>                                
-             <p class=catalog-title>Фитнес-браслеты</p></a>
+             <p class="catalog-title">Фитнес-браслеты</p></a>
            </li>
            <li class="catalog-categories-item">
              <a class="catalog-categories-link" href=""> 
              <div class="smart-watches"></div>             
-             <p class=catalog-title>Умные часы</p></a>
+             <p class="catalog-title">Умные часы</p></a>
            </li>
            <li class="catalog-categories-item">
              <a class="catalog-categories-link" href="">
              <div class="quadrocopters"></div>                       
-             <p class=catalog-title>Квадрокоптеры</p></a>
+             <p class="catalog-title">Квадрокоптеры</p></a>
            </li>
          </ul>
        </section>
@@ -144,9 +144,7 @@
                 <div class="services-description-box">
                   <p class="services-description">мы неплохо заработаем</p> 
                 </div>
-              </section>          
-           </div> 
-          </div>
+              </section>           
         </section>               
        <section class="delivery">
          <div class="delivery-icon">
