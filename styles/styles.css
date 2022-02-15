@@ -47,26 +47,34 @@
   }
   /* Header */
   .wrapper {
-    width: 1440px;
-    margin-top: 0px;
+    width: 1440px; 
+    margin-top: 0px;       
     margin-left: auto;
     margin-right: auto;
   }
+  .wrapper-catalog {
+    width: 1160px; 
+    margin-top: 0px;       
+    margin-left: 0;
+    margin-right: 0;
+  }
   .page-header {
     color: #000000;
-    background-color: #FFE17F; 
+    background-color: #FFFFFF; 
     width: 1040px; 
     height: 186px; 
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left:auto;
     margin-right: auto;       
   }
+  
   .page-catalog-header {
     color: #000000;
     background-color: #FFE17F; 
     width: 1160px; 
     height: 186px; 
     margin: 40px auto; 
+    margin-bottom: 0px;
   }
   .header-logo {
     width: 145px;
@@ -74,32 +82,39 @@
     margin-top: 0px;    
   }
   .header-logo-catalog {
-    width:145px;
+    width: 145px;
     margin-left: 60px;
+    margin-top: -22px;
   }
   .navigation {
-    display: flex;
-    flex-direction: column;   
-    margin: 0;
-    padding: 0;    
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;   
+    width: 1040px;   
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;   
   }  
   .navigation-list {
+    width: 1040px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
-    width: 1040px;
     justify-content: space-between;
-    padding-left: 0;
   }  
   .navigation-services {
     display: flex;
     flex-direction: row;
-    width: 1040px;
-    justify-content: space-between;
-    padding-left: 0;
+    width: 1040px;    
+    justify-content: space-between;    
+    padding-left: 0px;    
   }
   .navigation-item {
     list-style-type: none;
-  }
+  }  
   .navigation-catalog-item, .navigation-services-item {
     list-style-type: none;
   }
@@ -120,6 +135,15 @@
     text-decoration: none;
     text-transform: uppercase;    
   }  
+  .navigation-search {
+    width: 517px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;    
+  }
   .main-container {
     flex-grow: 1;
   }
@@ -142,7 +166,7 @@
     line-height: 30px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: -187px;  
+    margin-top: -165px;  
     margin-right: auto; 
     margin-left: auto;
 }  
@@ -167,11 +191,10 @@
   margin-top: 30px;
 }
 .property-first {
-  width: 1160px;
-  height: 750px;
+  width: 1160px;  
   margin-left: auto;
   margin-right: auto; 
-  margin-top: -200px;
+  margin-top: -210px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -183,7 +206,7 @@ height: 560px;
 .property-one {
   width: 560px;
   height: 401px;
-  margin-top: 110px;
+  margin-top: 80px;
 }
   .breadcrumbs-link {
     font-family: "Rubik", sans-serif;
@@ -197,6 +220,7 @@ height: 560px;
   .catalog-products {
     width: 100%;
     background-color: #F0F0F0;
+    margin-top: 35px;
   }   
   .catalog-conteiner {
     width: 1440px;
@@ -215,40 +239,54 @@ height: 560px;
     padding-right: 0px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-color: #FFFFFF;
   }
   .catalog-pagination-conteiner {
-    width: 840px;
-    padding-top: 25px;
-    height: 45px;
+    width: 840px;    
+    height: 70px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    padding-top: 0px;  
+    justify-content: space-between;  
     background-color: #F0F0F0;
+  }
+  .filter-sort-title {
+    width: 147px;
+    padding-left: 40px;
+  }
+  .sort-up-down {
+    width: 60px;
+    padding-right: 40px;
   }
   .pagination-conteiner-footer {
     width: 760px;
     height: 71px;
+    margin-top: 40px;
+    margin-bottom: 78px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #EBEBEB;
-    margin-bottom: 78px;      
+    background-color: #EBEBEB;       
+       
   }
   .pagination {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
+    padding-top: 20px;
+
   }
   .pagination-block-1 {
     width: 128px;
     margin-left: 0px;
   }
   .pagination-block-2 {
-    width: 200px;
-    text-align: center;
+    width: 200px;    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
   }
   .pagination-block-3 {
     width: 128px;
@@ -262,10 +300,19 @@ height: 560px;
   .inner-header {
     width: 1079px;
     margin: 0 auto;
+    margin-top: 35px;
   }  
       
   /* Хлебные крошки */
+  .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0; 
+  }    
+    
   .breadcrumbs-item {
+    margin-right: 36px;
+    color: inherit;
     list-style-type: none;
   }    
   /*категории catalog */  
@@ -277,12 +324,12 @@ height: 560px;
     margin-bottom: 0px;
     width: 760px;
     margin-top: 70px;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 30px;
+    column-gap: 38px;
     padding-left: 0px;
 
   }
@@ -295,7 +342,9 @@ height: 560px;
     text-transform: uppercase;
   }
   .property-first-title {
-    width: 560px;      
+    width: 545px;
+    display: block;  
+      
   }
   .property-first-title, .inner-header-title {
     font-family: "Raleway", sans-serif;
@@ -339,13 +388,16 @@ height: 560px;
     color: #444444;    
   } 
   /* Категории main */
+  .catalog-categories {
+    margin-top: 40px;
+  }
   .catalog-categoriest-list {
     width: 1160px;
     height: 253px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto;    
     align-items: center;
     padding-left: 0px;
   }  
@@ -353,6 +405,7 @@ height: 560px;
     width: 160px;
     height: 60px;
     word-wrap: break-word;
+    margin-bottom: 0px;
   }
   .virtual-reality {    
     width: 160px;
@@ -425,15 +478,16 @@ height: 560px;
     background-color: #FFFFFF;
     margin-top: 44px;
     margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin-right: auto;    
     border: 3px solid #E5E5E5;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 18px; 
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
   }
   .product-card-link, .product-card {
     font-family: "Rubik", sans-serif;
@@ -457,6 +511,7 @@ height: 560px;
     height: 391px;
     margin: 0 auto;
     padding-top: 20px;
+    margin-top: 50px;
   }
   .tabs { 
     width: 1160px; 
@@ -535,18 +590,18 @@ height: 560px;
     line-height: 30px;
     font-weight: 400;
     color: #444444;
-  }
+  }  
   /*быстрая доставка*/
   .delivery { 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 70px;
+    justify-content: flex-start;   
     flex-direction: row;    
     width: 1160px;
     height: 100px;  
     margin: 0 auto;  
+    margin-top: 70px;
   }
   .delivery-icon {
     width: 125px;
@@ -605,6 +660,7 @@ height: 560px;
    margin: 0 auto; 
    align-content: flex-start; 
    column-gap: 108px;  
+   margin-top: 70px;
   }
   /* О нас и Контакты */
   .about-us {
@@ -686,6 +742,7 @@ height: 560px;
 .subscribe {  
   width: 100%;
   background-color: #F0F0F0;
+  margin-top: 70px;
 }
 .subscribe-block {
   display: flex;
@@ -736,6 +793,7 @@ height: 560px;
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  align-items: center;
 }
 .footer-contacts {
   width: 234px;
