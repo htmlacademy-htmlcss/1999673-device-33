@@ -849,6 +849,9 @@ body {
 
 .catalog-filter {
   width: 320px;
+  padding-left: 40px;
+  position: absolute;
+  top: 400px;
 }
 .catalog-fiter-cost {
   width: 200px;
@@ -865,21 +868,206 @@ body {
 .catalog-filter-group {
   width: 200px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
   border: none;
+  border-top: 2px solid #000000;
+  padding-top: 12px;
 }
 
-.control-input {
-  display: block;
-  margin-right: 0;
-  margin-left: 0;
+/* Range */
+.range {
+  margin-top: 20px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #DCDCDC;
+  border-radius: 2px;  
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #EBEBEB;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #EBEBEB;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;  
+}
+
+.toggle-max {
+  top: -8px;
+  right: -12px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;  
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 46px;   
+}
+
+.cost {
+  font-family: "rubik",sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-list {
   list-style-type: none;
   padding-left: 0;
 }
+
+.control {
+  display: flex;
+  padding-top: 10px;
+}
+
+.control-input {
+  display: none;  
+}
+
+/*radio filter*/
+.control-input[type="radio"] + .control-color {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-color::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+/*фильтр по цвету*/
+.catalog-filter-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.catalog-filter-color {
+  font-family: "rubik",sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;   
+}
+
+.control-label {
+  margin-left: 16px;
+}
+
+.control-color {
+  position: relative;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+.control:hover .control-color {
+  opacity: 1;
+}
+
+.control-input:disabled + .control-color {
+  border-color: #000000;
+  opacity: 1;
+}
+
+.control-input[type="checkbox"]:checked + .control-color::before,
+.control-input[type="checkbox"]:checked + .control-color::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;  
+}
+
+.control-input[type="checkbox"]:checked + .control-color::before {
+    left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 5px;
+    border-radius: 2px;
+    border-left: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);    
+}
+
+.control-input[type="checkbox"]:checked + .control-color::after {
+  left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 5px;
+    border-radius: 2px;
+    border-left: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);    
+  }
+
+/*-----------*/
 
 .catalog-cart-pagination {
   width: 840px;
@@ -1062,6 +1250,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 16px;
+  margin-left: 5px;
 }
 
 .breadcrumbs-item {  
@@ -1106,7 +1295,20 @@ body {
   line-height: 19px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.catalog-filter-cost {
+  font-family: "rubik",sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.filter-name {
+  margin-bottom: 60px;
 }
 
 .property-first-title {
