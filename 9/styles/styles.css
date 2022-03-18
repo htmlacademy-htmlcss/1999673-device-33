@@ -37,6 +37,7 @@ body {
   color: #444444;
   background-color: #ffffff;
   margin: 0;
+  padding-top: 18px;
   
 }
 
@@ -643,7 +644,7 @@ body {
   background-color: #FFE17F;
   display: none;  
   position: relative;
-  left: -298px;   
+  left: -302px;   
   top: 53px;
   box-sizing: border-box;    
 }
@@ -996,8 +997,7 @@ body {
 }
 
 .Bluetooth-group {
-  padding-top: 8px;
-  margin-top: -5px;
+  padding-top: 8px; 
   margin-bottom: 33px;
 }
 
@@ -1100,7 +1100,7 @@ body {
 
 .control {
   display: flex;
-  padding-top: 8px;
+  padding-top: 15px;
 }
 
 .control-input {
@@ -1140,6 +1140,10 @@ body {
 
 .control-label {
   margin-left: 16px;
+  font-family: "rubik",sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .control-color {
@@ -1768,7 +1772,7 @@ body {
 
 .catalog-categories-item,.catalog-categories-link {
   font-family: "raleway",sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   line-height: 24px;
   color: #000000;
@@ -1909,6 +1913,8 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #444444;
+  padding-top: 2px;
+  padding-right: 5px;
 }
 
 .product-cart-link {
@@ -2021,7 +2027,8 @@ body {
   padding-top: 50px;
   background-image: url("../image/image-main/Rectangle.svg");
   background-repeat: no-repeat;
-  background-position-x: 280px;  
+  background-position-x: 280px;
+  background-position-y: top;
   margin-top: -85px;
   display: flex;
   flex-direction: column;
@@ -2279,10 +2286,13 @@ input:checked + label {
   word-wrap: break-word;
 }
 
-.about-us-list {
-  margin-bottom: 35px;
+.about-us-list {  
   padding-left: 20px;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 15px;
 }
 
 .contacts {
@@ -2505,7 +2515,7 @@ input:checked + label {
   flex-direction: row;
   width: 1160px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 52px;
   padding-left: 10px;
 }
 
@@ -2610,7 +2620,7 @@ input:checked + label {
 .footer-html {
   width: 175px;
   height: 116px;
-  margin-top: 50px; 
+  margin-top: 70px; 
   margin-left: 187px; 
 }
 
@@ -2640,7 +2650,7 @@ input:checked + label {
 
 .footer-about-text {
   font-family: "rubik",sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 400;
 }
@@ -2648,7 +2658,7 @@ input:checked + label {
 .footer-logo-icon {
   width: 149px;
   height: 40px;
-  margin-top: 62px;
+  margin-top: 65px;
 }
 
 .footer-logo-icon:focus-within {    
@@ -2671,20 +2681,19 @@ input:checked + label {
 }
 
 .footer-about-text {
-  margin-top: 35px;
+  margin-top: 31px;
   margin-bottom: 64px;  
 }
 
 .footer-line {
   margin-bottom: 77px;
-  position: relative;
-  top: -22px;
+  position: relative;  
 }
 
 .footer-sitelinks {
   width: 444px;
   margin: 0 auto;
-  margin-left: 120px;
+  margin-left: 118px;
 }
 
 .footer-sitelinks-list {
@@ -2692,7 +2701,7 @@ input:checked + label {
   display: grid;
   grid-template-columns: 125px 121px 128px;
   column-gap: 35px;
-  margin-top: 50px;
+  margin-top: 75px;
   margin-bottom: 0;
 }
 
