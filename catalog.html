@@ -22,18 +22,18 @@
                 <path d="M132.892 29.1999C134.993 29.1999 136.695 28.3999 137.695 27.2999L143.799 30.7999C141.298 34.1999 137.595 35.9999 132.792 35.9999C124.186 35.9999 118.782 30.1999 118.782 22.6999C118.782 15.1999 124.286 9.3999 132.191 9.3999C139.597 9.3999 145 15.0999 145 22.6999C145 23.7999 144.9 24.7999 144.7 25.6999H126.788C127.788 28.2999 130.09 29.1999 132.892 29.1999ZM137.595 20.0999C136.795 17.1999 134.493 16.0999 132.191 16.0999C129.289 16.0999 127.388 17.4999 126.688 20.0999H137.595Z" fill="black"/>
                 <path d="M83.458 0V10.1L91.0633 0H83.458Z" fill="#510094"/>
               </svg>
-              <h1 class="visually-hidden main-title">Интернет-магазин Девайс</h1>                          
+              <h1 class="visually-hidden">Интернет-магазин Девайс</h1>                          
             </a>
           </div>
           <nav class="navigation-catalog">
             <ul class="navigation-list-catalog">
               <li class="navigation-form">
-                <form method="post" class="navigation-search">
+                <form method="get" action="" class="navigation-search">
                   <label class="input-conteiner" for="form-search">
                     <input type="search" name="search" id="form-search" placeholder="Текст поиска"  class="input"/>
                   </label>
                   <label class="submit-conteiner" for="form-search-button">                
-                  <input type="button" name="search-button" id="form-search-button" value="Найти" class="submit"/>
+                  <input type="submit" name="search-button" id="form-search-button" value="Найти" class="submit"/>
                   </label>
                 </form>
               </li>
@@ -58,7 +58,7 @@
                     <span>Корзина</span>
                 </a>
                 <div>
-                  <button class="popover-close-button">
+                  <button class="popover-close-button" type="button">
                     2
                     <span class="visually-hidden">Закрыть</span>
                   </button>
@@ -71,11 +71,13 @@
                           </svg>
                       </li>
                       <li class="cart-item">
-                        <div class="cart-product-name">
-                          <img class="cart-item-img" src="image/image-catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
-                          <p class="cart-item-title">Любительская селфи-палка</p>
+                        <div>
+                          <a class="cart-product-name">
+                            <img class="cart-item-img" src="image/image-catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                            <p class="cart-item-title">Любительская селфи-палка</p>
+                          </a>
                         </div>
-                        <button type="button" class="cart-item-button button">  
+                        <button class="cart-item-button button" type="button" >  
                           <svg class="delete-bag-icon" aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z"/>
                             </svg>                                              
@@ -83,11 +85,13 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <div class="cart-product-name">
-                          <img class="cart-item-img" src="image/image-catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
-                          <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        <div> 
+                          <a class="cart-product-name">                         
+                            <img class="cart-item-img" src="image/image-catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+                            <p class="cart-item-title">Профессиональная селфи-палка</p>
+                          </a>
                         </div>
-                        <button type="button" class="cart-item-button button">  
+                        <button class="cart-item-button button" type="button">  
                           <svg class="delete-bag-icon" aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z"/>
                             </svg>                                              
@@ -99,9 +103,11 @@
                           <p class="cart-item-title-total">Сумма: 2000 ₽</p>                          
                       </li>
                       <li class="cart-item-button-bag">
-                        <button type="button" class="open-bag-botton">                          
-                          <span class="open-bag">Открыть корзину</span>
-                        </button>
+                        <div class="open-bag-botton">
+                          <a class="open-bag" href="#" >                          
+                            <span>Открыть корзину</span>
+                          </a>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -113,26 +119,26 @@
             <div class="navigation-services services-catalog">              
               <ul class="navigation-catalog-list">
                 <li class="navigation-catalog-item">                  
-                  <a class="navigation-catalog-link" href="catalog.html">Каталог товаров</a>
+                  <a class="navigation-catalog-link" href="#">Каталог товаров</a>
                   <div class="navigation-catalog-icon">   
                     <div class="subcatalog">
                       <div class="sabcatalog-conteiner">
                         <div class="left-list">
                           <ul class="subcatalog-list">
-                            <li><a class="subcatalog-link" href="">Виртуальная реальность</a></li>
-                            <li><a class="subcatalog-link" href="">Моноподы для селфи</a></li>
-                            <li><a class="subcatalog-link" href="">Экшн-камеры</a></li>
+                            <li><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
+                            <li><a class="subcatalog-link" href="#">Моноподы для селфи</a></li>
+                            <li><a class="subcatalog-link" href="#">Экшн-камеры</a></li>
                           </ul>
                         </div>
                         <div class="center-list">
                           <ul class="subcatalog-list">
-                            <li><a class="subcatalog-link" href="">Фитнес браслеты</a></li>
-                            <li><a class="subcatalog-link" href="">Умные часы</a></li>
+                            <li><a class="subcatalog-link" href="#">Фитнес браслеты</a></li>
+                            <li><a class="subcatalog-link" href="#">Умные часы</a></li>
                           </ul>
                         </div>
                         <div class="right-list">
                           <ul class="subcatalog-list">
-                            <li><a class="subcatalog-link" href="">Квадрокоптеры</a></li>
+                            <li><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
                           </ul>
                         </div>
                       </div>
@@ -141,9 +147,9 @@
                 </li>
               </ul>       
               <ul class="menu-item item-catalog">
-                <li class="navigation-services-item"><a class="navigation-services-link" href="">Доставка</a></li>
-                <li class="navigation-services-item"><a class="navigation-services-link" href="">Гарантия</a></li>
-                <li class="navigation-services-item"><a class="navigation-services-link" href="">Контакты</a></li>
+                <li class="navigation-services-item"><a class="navigation-services-link" href="#">Доставка</a></li>
+                <li class="navigation-services-item"><a class="navigation-services-link" href="#">Гарантия</a></li>
+                <li class="navigation-services-item"><a class="navigation-services-link" href="#">Контакты</a></li>
               </ul>               
             </div>           
           </nav>
@@ -156,23 +162,23 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
           <li class="breadcrumbs-item-icon">
-              <svg aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z" fill="black"/>
               </svg>             
           </li>
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Каталог товаров</a></li> 
           <li class="breadcrumbs-item-icon">
-            <svg aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z" fill="black"/>
             </svg>             
           </li>          
-          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Моноподы для селфи</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Моноподы для селфи</a></li>
         </ul>
       </header>    
       <section class="catalog-products"> 
         <div class="catalog-conteiner">       
           <div class="filter-conteiner">
-            <h2 class="visually-hidden main-title">Каталог товаров</h2>
+            <h2 class="visually-hidden">Каталог товаров</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="catalog-filter-title filter-name">Фильтр</h3>              
               <fieldset class="catalog-filter-group">
@@ -180,22 +186,22 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 119px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>  
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                      <span class="cost">от 0</span>
-                      <input class="range-input" type="number" value="50" name="min-price">
+                      <span class="visually-hidden">от 0</span>
+                      <input class="range-input" type="number" value="" name="min-price" placeholder="от 0">
                     </label>
                     <label class="catalog-filter-label">
-                      <span class="cost cost-max">до 5000</span>
-                      <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px">
+                      <span class="visually-hidden">до 5000</span>
+                      <input class="range-input range-cost" type="number" value="" name="max-price" style="width: 100px"placeholder="до 5000">
                     </label>
                   </div>
                 </div>
@@ -203,39 +209,39 @@
               <fieldset class="catalog-filter-group">
                 <span class="catalog-filter-color">Цвет</span>
                 <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">                    
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="color-black" checked>
+                      <span class="control-color"></span>
+                      <span class="control-label">Черный</span>                    
+                    </label>                    
+                  </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="color-black" checked>
-                     <span class="control-color"></span>
-                     <span class="control-label">Черный</span>
+                      <input class="visually-hidden control-input" type="checkbox" name="color-white" checked>
+                      <span class="control-color"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="color-white" checked>
-                    <span class="control-color"></span>
-                    <span class="control-label">Белый</span>
+                      <input class="visually-hidden control-input" type="checkbox" name="color-blue">
+                      <span class="control-color"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="color-blue">
-                    <span class="control-color"></span>
-                    <span class="control-label">Синий</span>
+                      <input class="visually-hidden control-input" type="checkbox" name="color-red">
+                      <span class="control-color"></span>
+                      <span class="control-label">Красный</span>                 
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="color-red">
-                    <span class="control-color"></span>
-                    <span class="control-label">Красный</span>                 
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="color-pink">
-                    <span class="control-color"></span>
-                    <span class="control-label">Розовый</span>
+                      <input class="visually-hidden control-input" type="checkbox" name="color-pink">
+                      <span class="control-color"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>                
                 </ul>
@@ -291,7 +297,7 @@
                 <li class="product-card">
                   <article class="product-card-conteiner">                    
                     <div class="card-conteiner">
-                      <img class="product-card-image" src="image/image-catalog/product-1.jpg" alt="Любительская селфи-палка" width="358" height="378">                                           
+                      <img class="product-card-image" src="image/image-catalog/product-1.jpg" alt="Любительская селфи-палка." width="358" height="378">                                           
                     </div>
                     <div class="product-title-conteiner">                                  
                       <a class="product-card-title-link" href="#">
@@ -300,14 +306,14 @@
                       <b class="product-card-price">500 ₽</b>
                     </div>
                     <div class="product-cart-link">
-                      <a href="" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
+                      <a href="#" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
                     </div>
                   </article>             
                 </li>
                 <li class="product-card">
                   <article class="product-card-conteiner">                                          
                     <div class="card-conteiner">                        
-                      <img class="product-card-image" src="image/image-catalog/product-2.jpg" alt="Профессиональная селфи-палка" width="358" height="378">
+                      <img class="product-card-image" src="image/image-catalog/product-2.jpg" alt="Профессиональная селфи-палка." width="358" height="378">
                     </div>
                     <div class="new-product">New</div>
                     <div class="product-title-conteiner">                                                                                                                                        
@@ -317,14 +323,14 @@
                       <b class="product-card-price">1500 ₽</b>
                     </div>
                     <div class="product-cart-link">
-                      <a href="" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
+                      <a href="#" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
                     </div>
                   </article>           
                 </li>
                 <li class="product-card">
                   <article class="product-card-conteiner">                    
                     <div class="card-conteiner">
-                      <img class="product-card-image" src="image/image-catalog/product-3.jpg" alt="Непотопляемая селфи-палка»" width="358" height="378">           
+                      <img class="product-card-image" src="image/image-catalog/product-3.jpg" alt="Непотопляемая селфи-палка." width="358" height="378">           
                     </div>
                     <div class="product-title-conteiner">                
                       <a class="product-card-title-link" href="#">
@@ -333,14 +339,14 @@
                       <b class="product-card-price">2500 ₽</b> 
                     </div>
                     <div class="product-cart-link">
-                      <a href="" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
+                      <a href="#" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
                     </div> 
                   </article>            
                 </li>
                 <li class="product-card">
                   <article class="product-card-conteiner">                    
                     <div class="card-conteiner">
-                      <img class="product-card-image" src="image/image-catalog/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="358" height="378">
+                      <img class="product-card-image" src="image/image-catalog/product-4.jpg" alt="Селфи-палка «Следуй за мной." width="358" height="378">
                     </div>
                     <div class="product-title-conteiner">                    
                       <a class="product-card-title-link" href="#">
@@ -349,22 +355,18 @@
                       <b class="product-card-price">1500 ₽</b>
                     </div>
                     <div class="product-cart-link">
-                      <a href="" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
+                      <a href="#" class="property-more-link"><span class="property-more-card">Подробнее</span></a>
                     </div>
                   </article>            
                 </li>                                      
               </ul>
-                <div class="pagination-load" tabindex="0">
-                  <a class="pagination-show-more" href="">
-                    <div>
-                      <span class="pagination-show-more">Загрузить еще</span>                  
-                    </div>
-                  </a>
+                <div class="pagination-load">             
+                    <button class="pagination-show-more" type="button">Загрузить еще</button>                             
                 </div>
                 <div class="pagination-conteiner-footer">
                   <div class="pagination">
                     <div class="pagination-block-1">
-                      <a class="pagination-prev" href="#">
+                      <a class="pagination-prev">
                         <ul class="pagination-list">
                           <li class="pagination-item">                          
                             <span class="pagination-back">Назад</span>
@@ -375,14 +377,14 @@
                     <div class="pagination-block-2">
                       <ul class="pagination-list-two"> 
                         <li class="pagination-item"><a class="pagination-link pagination-current">1</a></li>
-                        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-                        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-                        <li class="pagination-item"><a class="pagination-link" href="/">...</a></li>
-                        <li class="pagination-item"><a class="pagination-link" href="#">15</a></li>
+                        <li class="pagination-item"><a class="pagination-link">2</a></li>
+                        <li class="pagination-item"><a class="pagination-link">3</a></li>
+                        <li class="pagination-item"><a class="pagination-link">...</a></li>
+                        <li class="pagination-item"><a class="pagination-link" >15</a></li>
                       </ul>
                     </div>
                     <div class="pagination-block-3">
-                      <a class="pagination-prev" href="#">
+                      <a class="pagination-prev">
                         <ul class="pagination-list">
                           <li class="pagination-item">                          
                             <span class="pagination-forward">Вперед</span>
@@ -400,9 +402,9 @@
   <footer class="page-footer">
     <div class="footer-conteiner">
        <section class="footer-contacts">
-          <h2 class="visually-hidden main-title">Контакты</h2>
+          <h2 class="visually-hidden">Контакты</h2>
           <div class="footer-logo-icon">
-            <a class="footer-contacts-logo" href="">
+            <a class="footer-contacts-logo" href="index.html">
               <svg class="footer-logo" aria-hidden="true" focusable="false" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z"/>
                 <path d="M43.7 29.1999C45.8 29.1999 47.5 28.3999 48.5 27.2999L54.6 30.7999C52.1 34.1999 48.4 35.9999 43.6 35.9999C35 35.9999 29.6 30.1999 29.6 22.6999C29.6 15.1999 35 9.3999 43 9.3999C50.4 9.3999 55.8 15.0999 55.8 22.6999C55.8 23.7999 55.7 24.7999 55.5 25.6999H37.6C38.6 28.2999 40.9 29.1999 43.7 29.1999ZM48.3 20.0999C47.5 17.1999 45.2 16.0999 42.9 16.0999C40 16.0999 38.1 17.4999 37.4 20.0999H48.3Z"/>
@@ -422,19 +424,42 @@
           </address>
        </section>
        <section>
+        <h2 class="visually-hidden">Услуги</h2>
           <div class="footer-sitelinks">
             <ul class="footer-sitelinks-list">
-              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Доставка</a></li>
-              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Гарантия</a></li>
-              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Контакты</a></li>
+              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Доставка</a></li>
+              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Гарантия</a></li>
+              <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-social">
               <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="footer-social-list">                                    
-                <li class="footer-social-item"><a class="footer-social-button footer-social-fc" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
-                <li class="footer-social-item"><a class="footer-social-button footer-social-ig" href="htps://www.instagram.com/htmlacademy/"><span class="visually-hidden">Инстаграм</span></a></li>
-                <li class="footer-social-item"><a class="footer-social-button footer-social-tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
+                <li class="footer-social-item">
+                  <a class="footer-social-button footer-social-fc" href="https://www.facebook.com/htmlacademy">
+                    <svg class="social-icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z"/>
+                    </svg>
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="footer-social-button footer-social-ig" href="htps://www.instagram.com/htmlacademy/">
+                    <svg class="social-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"/>
+                      <path d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z"/>
+                    </svg>
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="footer-social-button footer-social-tw" href="https://twitter.com/htmlacademy_ru">
+                    <svg class="social-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.7 0.155143C11.2 -0.344857 12.3 0.455143 12.9 1.25514C13.4 1.05514 14 0.855143 14.6 0.655143C14.6 1.45514 14.1 2.05514 13.8 2.25514C14.5 2.45514 15 1.85514 15 1.85514C14.9 2.75514 14.1 3.55514 13.6 3.75514C13.4 10.0551 10.8 14.1551 4.7 14.0551C4.2 14.0551 4.8 14.0551 4.3 14.0551C4 14.0551 0.6 13.6551 0 12.2551C2 12.4551 3.4 11.8551 4.1 11.1551C3.3 10.8551 1.7 10.7551 1.5 8.35514C1.8 8.55514 2 8.65514 2.6 8.55514C1.5 7.75514 0.3 7.05514 0.4 5.05514C0.7 5.35514 1.3 5.55514 1.6 5.45514C1 5.25514 -0.2 2.35514 0.8 0.855143C2.4 2.55514 4.1 4.25514 7.1 4.35514C7.3 2.25514 8.1 0.855143 9.7 0.155143Z"/>
+                    </svg>
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
               </ul>        
            </div>
        </section>
@@ -456,6 +481,7 @@
                   <path d="M98.2 17.9C96.6 17.9 95.3 18.7 94.6 19.9H94.5C93.9 18.7 92.7 17.9 91.1 17.9C89.7 17.9 88.6 18.6 88 19.7V18.2H86.1V28.8H88.1V23.4C88.1 21.4 89.1 20 90.7 19.9C92.2 19.9 93.1 20.9 93.1 22.5V28.8H95.1V23.2C95.1 20.8 96.5 19.9 97.7 19.9C99.2 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2 17.9Z"/>
                   <path d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"/>
                   </svg>
+                  <span class="visually-hidden">Разработано в htmlacademy</span>
               </a>
             </div>
        </div>      
