@@ -40,6 +40,53 @@ body {
   padding-top: 25px;  
 }
 
+/*Активный пункт*/
+.current-page {
+  font-family: "raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.2em;
+  border-bottom: 2px solid #000000;
+}
+
+.current-page:hover {
+  opacity: 0.6;
+}
+
+.current-page:active {
+  opacity: 0.3;
+}
+
+.current-page:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none; 
+}
+
+.current-page-menu {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.current-page-menu:hover {
+  opacity: 0.6;
+}
+
+.current-page-menu:active {
+  opacity: 0.3;
+}
+
+.current-page-menu:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none; 
+}
+
+/*--------Header------------*/
 .header-slider {
   width: 1160px;  
   margin-left: auto;
@@ -2784,7 +2831,7 @@ input:checked + label {
   border: none;
 }
 
-.field:valid {
+.field:invalid {
   border-bottom: 2px solid #FF3D3D;
 }
 
@@ -3149,10 +3196,6 @@ input:checked + label {
   border: 3px solid #DCDCDC;
 }
 
-.modal-form-input:valid {
-  border: 2px solid #FF3D3D;
-}
-
 .modal-exit:focus-within {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
@@ -3201,6 +3244,12 @@ input:checked + label {
   background-image: url("../image/image-main/modal-email-icon.svg");
   background-repeat: no-repeat;
   background-position: 95%;
+}
+
+
+.input-email:invalid {
+  box-shadow: 0 0 0 2px #FF3D3D;
+  outline: none;
 }
 
 .modal-form-input-service {
@@ -3314,6 +3363,17 @@ input:checked + label {
   column-gap: 40px;
   row-gap: 40px;
   padding-left: 80px;
+}
+
+.button-plus-minus {
+  width: 190px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-plus-minus:invalid {
+  box-shadow: 0 0 0 2px #FF3D3D;
+  outline: none;
 }
 
 .bt-minus, .bt-plus {

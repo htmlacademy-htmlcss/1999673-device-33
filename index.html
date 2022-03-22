@@ -542,7 +542,7 @@
                     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                       <label class="newsletter-email" for="newsletter-email"></label>
                       <div class="form-flex">
-                        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
                         <input class="newsletter-button" type="button" value="Подписаться">   
                       </div>            
                     </form>
@@ -663,24 +663,24 @@
             </p>
             <p class="modal-input-group">
               <label class="visually-modal" for="modal-email">Ваш e-mail:</label>
-              <input class="modal-form-input input-email" type="email" id="modal-email" name="e-mail" placeholder="почта" required>
+              <input class="modal-form-input input-email" type="email" id="modal-email" name="e-mail" placeholder="почта">
             </p>
             <p class="modal-input-group">
               <label class="visually-modal" for="modal-service">Что нужно привезти:</label>
               <input class="modal-form-input-service" type="text" id="modal-service" name="text-service" placeholder="В свободной форме" required>
             </p>
             <div class="modal-input-group">                  
-               <div class="buttom-number">
-                  <div class="quantity-conteiner">             
-                    <div class="visually-modal">
-                      <span class="how-match">Количество:</span>                                                          
+               <div class="buttom-number">                              
+                  <div class="visually-modal">
+                    <span class="how-match">Количество:</span>
+                    <div class="button-plus-minus">                                                        
                       <button class="bt-minus" type="button"></button>
                       <span class="visually-hidden">уменьшить количество</span>               
-                      <input class="quantity" type="text" id="number-group" value="1" data-max-count="100">
+                      <input class="quantity" type="number" id="number-group" value="1" min="0" max="100">
                       <button class="bt-plus" type="button"></button> 
-                      <span class="visually-hidden">увеличить количество</span>                    
-                    </div>
-                  </div>
+                      <span class="visually-hidden">увеличить количество</span>
+                    </div>                  
+                  </div>                  
                 </div>                             
             </div>            
             <p class="modal-input-group">
