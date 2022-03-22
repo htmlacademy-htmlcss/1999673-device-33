@@ -9,11 +9,11 @@
   </head>
   <body>
     <header class="header-slider">
-      <h1 class="visually-hidden main-title">Интернет-магазин Девайс</h1>
+      <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
       <div class="wrapper">
         <div class="page-header">
           <div class="header-logo">
-            <a href="" class="header-logo-link">
+            <a class="header-logo-link">
               <svg class="header-logo-icon" aria-hidden="true" focusable="false" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="black"/>
                 <path d="M43.7298 29.1999C45.8313 29.1999 47.5325 28.3999 48.5332 27.2999L54.6374 30.7999C52.1356 34.1999 48.4331 35.9999 43.6298 35.9999C35.0238 35.9999 29.6201 30.1999 29.6201 22.6999C29.6201 15.1999 35.0238 9.3999 43.0294 9.3999C50.4345 9.3999 55.8382 15.0999 55.8382 22.6999C55.8382 23.7999 55.7381 24.7999 55.538 25.6999H37.6256C38.6263 28.2999 40.9279 29.1999 43.7298 29.1999ZM48.333 20.0999C47.5325 17.1999 45.2309 16.0999 42.9293 16.0999C40.0273 16.0999 38.126 17.4999 37.4255 20.0999H48.333Z" fill="black"/>
@@ -24,26 +24,27 @@
                 <path d="M83.458 0V10.1L91.0633 0H83.458Z" fill="#510094"/>
                 </svg>                                        
             </a>
+            <span class="visually-hidden">Логотип компании</span>
           </div>
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-form">
-                <form method="post" class="navigation-search">
+                <form method="get" class="navigation-search">
                   <label class="input-conteiner" for="form-search">
                     <input type="search" name="search" id="form-search" placeholder="Текст поиска"  class="input"/>
                   </label>
                   <label class="submit-conteiner" for="form-search-button">                
-                  <input type="button" name="search-button" id="form-search-button" value="Найти" class="submit"/>
+                  <input type="submit" name="search-button" id="form-search-button" value="Найти" class="submit"/>
                   </label>
                 </form>
               </li>
-              <li class="navigation-enter"><a class="navigation-link" href="">
+              <li class="navigation-enter"><a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.5 12.3889H13.5C13.3 9.78892 11.4 7.58892 8.8 6.88892C9.8 6.28892 10.5 5.18892 10.5 3.88892C10.5 1.98892 8.9 0.388916 7 0.388916C5.1 0.388916 3.5 1.98892 3.5 3.88892C3.5 5.18892 4.2 6.28892 5.2 6.88892C2.6 7.58892 0.7 9.78892 0.5 12.3889Z"/>
                 </svg>
                 Войти</a></li>
               <li class="navigation-compare">
-                <a class="navigation-link" href="">
+                <a class="navigation-link" href="#">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 0.388916H4V12.3889H6V0.388916Z"/>
                     <path d="M2 4.38892H0V12.3889H2V4.38892Z"/>
@@ -51,14 +52,14 @@
                   </svg>
                   Сравнить</a></li>
               <li class="navigation-pay">
-                <a class="navigation-link" href="">
+                <a class="navigation-link" href="#">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.3 5.38892L11.8 5.58892L8.6 0.688916C8.5 0.488916 8.2 0.388916 8 0.388916C7.8 0.388916 7.5 0.488916 7.4 0.688916L4.2 5.58892H0.7C0.3 5.58892 0 5.88892 0 6.28892C0 6.38892 0 6.38892 0 6.48892L1.9 13.2889C2.1 13.9889 2.6 14.3889 3.3 14.3889H12.7C13.4 14.3889 13.9 13.9889 14.1 13.2889L16 6.38892C16 6.28892 16 6.28892 16 6.18892C16 5.78892 15.7 5.38892 15.3 5.38892ZM8 2.28892L10.2 5.48892H5.9L8 2.28892Z"/>
                   </svg>
                     <span>Корзина</span>
                 </a>
                 <div>
-                  <button class="popover-close-button">
+                  <button class="popover-close-button" type="button">
                     2
                     <span class="visually-hidden">Закрыть</span>
                   </button>
@@ -71,11 +72,13 @@
                           </svg>
                       </li>
                       <li class="cart-item">
-                        <div class="cart-product-name">
-                          <img class="cart-item-img" src="image/image-catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
-                          <p class="cart-item-title">Любительская селфи-палка</p>
+                        <div class="cart-item-conteiner" tabindex="0">
+                          <a class="cart-product-name">
+                            <img class="cart-item-img" src="image/image-catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                            <p class="cart-item-title">Любительская селфи-палка</p>
+                          </a>
                         </div>
-                        <button type="button" class="cart-item-button button">  
+                        <button class="cart-item-button button" type="button" >  
                           <svg class="delete-bag-icon" aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z"/>
                             </svg>                                              
@@ -83,11 +86,13 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <div class="cart-product-name">
-                          <img class="cart-item-img" src="image/image-catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
-                          <p class="cart-item-title">Профессиональная селфи-палка</p>
+                        <div class="cart-item-conteiner" tabindex="0"> 
+                          <a class="cart-product-name">                         
+                            <img class="cart-item-img" src="image/image-catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+                            <p class="cart-item-title">Профессиональная селфи-палка</p>
+                          </a>
                         </div>
-                        <button type="button" class="cart-item-button button">  
+                        <button class="cart-item-button button" type="button">  
                           <svg class="delete-bag-icon" aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z"/>
                             </svg>                                              
@@ -99,9 +104,11 @@
                           <p class="cart-item-title-total">Сумма: 2000 ₽</p>                          
                       </li>
                       <li class="cart-item-button-bag">
-                        <button type="button" class="open-bag-botton">                          
-                          <span class="open-bag">Открыть корзину</span>
-                        </button>
+                        <div class="open-bag-botton">
+                          <a class="open-bag" href="#" >                          
+                            <span class="open-bag-conteiner">Открыть корзину</span>
+                          </a>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -119,20 +126,20 @@
                       <div class="sabcatalog-conteiner">
                         <div class="left-list">
                           <ul class="subcatalog-list">
-                            <li><a class="subcatalog-link" href="">Виртуальная реальность</a></li>
-                            <li><a class="subcatalog-link" href="">Моноподы для селфи</a></li>
-                            <li><a class="subcatalog-link" href="">Экшн-камеры</a></li>
+                            <li><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
+                            <li><a class="subcatalog-link" href="#">Моноподы для селфи</a></li>
+                            <li><a class="subcatalog-link" href="#">Экшн-камеры</a></li>
                           </ul>
                         </div>
                         <div class="center-list">
                           <ul class="subcatalog-list">
-                            <li><a class="subcatalog-link" href="">Фитнес браслеты</a></li>
-                            <li><a class="subcatalog-link" href="">Умные часы</a></li>
+                            <li><a class="subcatalog-link" href="#">Фитнес браслеты</a></li>
+                            <li><a class="subcatalog-link" href="#">Умные часы</a></li>
                           </ul>
                         </div>
                         <div class="right-list">
                           <ul class="subcatalog-list">
-                            <li><a class="subcatalog-link" href="">Квадрокоптеры</a></li>
+                            <li><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
                           </ul>
                         </div>
                       </div>
@@ -141,9 +148,9 @@
                 </li>
               </ul>       
               <ul class="menu-item">
-                <li class="navigation-services-item"><a class="navigation-services-link" href="">Доставка</a></li>
-                <li class="navigation-services-item"><a class="navigation-services-link" href="">Гарантия</a></li>
-                <li class="navigation-services-item"><a class="navigation-services-link contacts-link" href="">Контакты</a></li>
+                <li class="navigation-services-item"><a class="navigation-services-link" href="#">Доставка</a></li>
+                <li class="navigation-services-item"><a class="navigation-services-link" href="#">Гарантия</a></li>
+                <li class="navigation-services-item"><a class="navigation-services-link contacts-link" href="#">Контакты</a></li>
               </ul>               
             </div>           
           </nav>
@@ -152,17 +159,18 @@
     </header>
       <main class="main-container main-index">          
         <div class="conteiner">        
-          <section class="property-first"> 
+          <section class="property-first">
+            <h2 class="visually-hidden">Товары интернет-магазина</h2>
             <div class="background-first">
               <p class=number-product>01</p>
             </div>
             <div class="slider-one">       
               <div class="property-one">
                 <div class="property-one-name">
-                <h2 class="property-first-title">Порхает как бабочка, жалит как пчела!</h2>
+                <h3 class="property-first-title">Порхает как бабочка, жалит как пчела!</h3>
                 </div>
                 <p class="property-first-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="property-first-link property-more" href="">Подробнее</a>
+                <a class="property-first-link property-more" href="#">Подробнее</a>
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -193,29 +201,34 @@
                 </ul>
               </div>
               <div class="slider">           
-                <img class="slider-image" src="image/image-main/slider-1.png" alt="Фото квадрокоптера" width="560" height="550">
+                <img class="slider-image" src="image/image-main/slider-1.png" alt="Фото квадрокоптера." width="560" height="550">
                 <button class="slider-prev" type="button">
                   <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z"/>
-                </svg></button>
+                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z"/>
+                  </svg>
+                  <span class="visually-hidden">слайдер влево</span>
+                </button>
                 <button class="slider-next" type="button">
-                <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"/>
-                </svg></button>
+                  </svg>
+                  <span class="visually-hidden">слайдер вправо</span>
+                </button>
               </div>
             </div>    
           </section>
-          <section class="property-two"> 
+          <section class="property-two">
+            <h2 class="visually-hidden">Товары интернет-магазина</h2>
             <div class="background-first">
               <p class=number-product>02</p>
             </div>
             <div class="slider-one">       
               <div class="property-one">
                 <div class="property-one-name">
-                <h2 class="property-first-title">Худеем правильно!</h2>
+                  <h3 class="property-first-title">Худеем правильно!</h3>
                 </div>
                 <p class="property-first-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="property-first-link" href=""><p class="property-more">Подробнее</p></a>
+                <a class="property-first-link" href="#"><p class="property-more">Подробнее</p></a>
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -244,29 +257,34 @@
                 </ul>
               </div>
               <div class="slider">           
-                <img class="slider-image" src="image/image-main/slider-2.png" alt="Фото фитнес браслета" width="560" height="560">
+                <img class="slider-image" src="image/image-main/slider-2.png" alt="Фото фитнес браслета." width="560" height="560">
                 <button class="slider-prev" type="button">
                   <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z"/>
-                </svg></button>
+                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z"/>
+                  </svg>
+                  <span class="visually-hidden">слайдер влево</span>
+                </button>
                 <button class="slider-next" type="button">
-                <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"/>
-                </svg></button>
+                  </svg>
+                  <span class="visually-hidden">слайдер вправо</span>
+                </button>
               </div>
             </div>    
           </section>
-          <section class="property-three"> 
+          <section class="property-three">
+            <h2 class="visually-hidden">Товары интернет-магазина</h2> 
             <div class="background-first">
               <p class=number-product>03</p>
             </div>
             <div class="slider-one">       
               <div class="property-one">
                 <div class="property-one-name">
-                <h2 class="property-first-title">Делай селфи, как Бен Стиллер!</h2>
+                <h3 class="property-first-title">Делай селфи, как Бен Стиллер!</h3>
                 </div>
                 <p class="property-first-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                <a class="property-first-link" href=""><p class="property-more">Подробнее</p></a>
+                <a class="property-first-link" href="#"><p class="property-more">Подробнее</p></a>
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -299,23 +317,27 @@
                 </ul>
               </div>
               <div class="slider">           
-                <img class="slider-image" src="image/image-main/slider-2.png" alt="Фото фитнес браслета" width="560" height="560">
+                <img class="slider-image" src="image/image-main/slider-2.png" alt="Фото фитнес браслета." width="560" height="560">
                 <button class="slider-prev" type="button">
                   <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z"/>
-                </svg></button>
+                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z"/>                  
+                  </svg>
+                  <span class="visually-hidden">слайдер влево</span>
+                </button>
                 <button class="slider-next" type="button">
-                <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="slider-prev-next" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"/>
-                </svg></button>
+                  </svg>
+                  <span class="visually-hidden">слайдер вправо</span>
+                </button>
               </div>
             </div>    
           </section>            
           <section class="catalog-categories">           
-            <h2 class="visually-hidden main-title">Список категорий каталога</h2>
+            <h2 class="visually-hidden">Список категорий каталога</h2>
             <ul class="catalog-categoriest-list">
               <li class="catalog-categories-item">                
-                <a class="catalog-categories-link" href=""> 
+                <a class="catalog-categories-link" href="#"> 
                   <div class="catalog-categories-conteiner">               
                     <div class="virtual-reality"></div>                                      
                     <p class="catalog-title">Виртуальная реальность</p>
@@ -323,15 +345,15 @@
                 </a>                          
               </li>
               <li class="catalog-categories-item">
-                <a class="catalog-categories-link" href="">
+                <a class="catalog-categories-link" href="#">
                   <div class="catalog-categories-conteiner">
                     <div class="monopods-for-selfies"></div>                       
-                    <p class="catalog-title">Моноподы для селфи</p>
+                    <p class="catalog-title">Моноподы <br> для селфи</p>
                   </div>
                 </a>
               </li>
               <li class="catalog-categories-item">
-                <a class="catalog-categories-link" href="">
+                <a class="catalog-categories-link" href="#">
                   <div class="catalog-categories-conteiner">
                     <div class="action-cameras"></div>                         
                     <p class="catalog-title">Экшн-камеры</p>
@@ -339,7 +361,7 @@
                 </a>
               </li>
               <li class="catalog-categories-item">
-                <a class="catalog-categories-link" href="">
+                <a class="catalog-categories-link" href="#">
                   <div class="catalog-categories-conteiner">
                     <div class="fitness-bracelets"></div>                                
                     <p class="catalog-title">Фитнес-браслеты</p>
@@ -347,7 +369,7 @@
                 </a>
               </li>
               <li class="catalog-categories-item">
-                <a class="catalog-categories-link" href="">
+                <a class="catalog-categories-link" href="#">
                   <div class="catalog-categories-conteiner">
                     <div class="smart-watches"></div>             
                     <p class="catalog-title">Умные часы</p>
@@ -355,7 +377,7 @@
                 </a>
               </li>
               <li class="catalog-categories-item">
-                <a class="catalog-categories-link" href="">
+                <a class="catalog-categories-link" href="#">
                   <div class="catalog-categories-conteiner">
                     <div class="quadrocopters"></div>                       
                     <p class="catalog-title">Квадрокоптеры</p>
@@ -365,15 +387,16 @@
             </ul>          
          </section>
         </div>
-         <section class="services">           
+         <section class="services">
+          <h2 class="visually-hidden">Услуги интернет-магазина</h2>          
            <div class="tabs-conteiner">                         
               <div class="tabs">                
                 <input class="service-input" id="tab1" type="radio" name="tabs" checked> 
-                <label class="service-tabs" for="tab1"><span class="service-tabs-name">Доставка</span></label> 
+                <label class="service-tabs" for="tab1" tabindex="0"><span class="service-tabs-name">Доставка</span></label> 
                 <input id="tab2" type="radio" name="tabs"> 
-                <label class="service-tabs" for="tab2"><span class="service-tabs-name">Гарантия</span></label> 
+                <label class="service-tabs" for="tab2" tabindex="0"><span class="service-tabs-name">Гарантия</span></label> 
                 <input id="tab3" type="radio" name="tabs"> 
-                <label class="service-tabs" for="tab3"><span class="service-tabs-name">Кредит</span></label>            
+                <label class="service-tabs" for="tab3" tabindex="0"><span class="service-tabs-name">Кредит</span></label>            
               </div>                
               <div class="services-tab" id="content1">
                 <div class="services-description-box">
@@ -423,7 +446,7 @@
                     <rect width="171" height="195" fill="white"/>
                     </clipPath>
                     </defs>
-                    </svg>
+                  </svg>
                 </div> 
               </div>  
               <div class="services-tab tab-none" id="content3">
@@ -446,21 +469,21 @@
                     <rect width="156" height="188" fill="white" transform="translate(0 0.5)"/>
                     </clipPath>
                     </defs>
-                    </svg> 
+                  </svg> 
                 </div>
               </div>
-            </div>
-            <h2 class="visually-hidden main-title">Услуги интернет магазина</h2>                  
+            </div>                              
           </section>               
           <section class="delivery-container">
-            <div class="conteiner-delivery">
-              <a class="delivery-link-service" href="">
+            <h2 class="visually-hidden">Дополнительные услуги интернет-магазина</h2>
+            <div class="conteiner-delivery" tabindex="0">
+              <a class="delivery-link-service">
                <div class="delivery">
                   <div class="delivery-icon">
                     <p class="visually-hidden"></p>
                   </div>         
                   <div class="delivery-item-title">
-                      <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
+                      <h3 class="delivery-title">Доставим редкий товар под заказ</h3>
                   </div>
                   <div class="delivery-blok">         
                     <p class="delivery-link">
@@ -470,15 +493,17 @@
                         <path d="M2 4H0V12H2V4Z"/>
                         </g>
                       </svg>
+                      <span class="visually-hidden">Подробнее о доставке редкого товара</span>
                     </p>
                   </div> 
                 </div> 
               </a>
             </div>               
           </section>
-          <section class="index-columns">       
+          <section class="index-columns">
+            <h2 class="visually-hidden">Информация о компании</h2>      
             <div class="about-us">                  
-              <h2 class="about-us-title">О нас</h2>
+              <h3 class="about-us-title">О нас</h3>
               <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
               <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
               <ul class=about-us-list>      
@@ -489,7 +514,7 @@
               <a class="more-about-us" href="#">Подробнее о нас</a>      
             </div>
             <div class="contacts">
-              <h2 class="contacts-title">Контакты</h2>
+              <h3 class="contacts-title">Контакты</h3>
               <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки.</p>
               <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -505,9 +530,10 @@
               <a class="button button-feedback" href="#">Напишите нам</a>
             </div>
           </section>
-            <section class="subscribe"> 
+            <section class="subscribe">
+              <h2 class="visually-hidden">Подписка на рассылку от компании Девайс</h2> 
               <div class="subscribe-block">     
-                <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
                 <p class="subscribe-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
                 а также акции, спецпредложения и вот это вот всё.</p>
               </div>
@@ -516,7 +542,7 @@
                     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                       <label class="newsletter-email" for="newsletter-email"></label>
                       <div class="form-flex">
-                        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
                         <input class="newsletter-button" type="button" value="Подписаться">   
                       </div>            
                     </form>
@@ -533,7 +559,7 @@
     <footer class="page-footer">
       <div class="footer-conteiner">
          <section class="footer-contacts">
-            <h2 class="visually-hidden main-title">Контакты</h2>
+            <h2 class="visually-hidden">Контакты</h2>
             <div class="footer-logo-icon">
               <a class="footer-contacts-logo" href="">
                 <svg class="footer-logo" aria-hidden="true" focusable="false" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -555,19 +581,42 @@
             </address>
          </section>
          <section>
+          <h2 class="visually-hidden">Услуги</h2>
             <div class="footer-sitelinks">
               <ul class="footer-sitelinks-list">
-                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Доставка</a></li>
-                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Гарантия</a></li>
-                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="">Контакты</a></li>
+                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Доставка</a></li>
+                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Гарантия</a></li>
+                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Контакты</a></li>
               </ul>
             </div>
             <div class="footer-social">
                 <h2 class="visually-hidden">Социальные сети</h2>
                 <ul class="footer-social-list">                                    
-                  <li class="footer-social-item"><a class="footer-social-button footer-social-fc" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
-                  <li class="footer-social-item"><a class="footer-social-button footer-social-ig" href="htps://www.instagram.com/htmlacademy/"><span class="visually-hidden">Инстаграм</span></a></li>
-                  <li class="footer-social-item"><a class="footer-social-button footer-social-tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
+                  <li class="footer-social-item">
+                    <a class="footer-social-button footer-social-fc" href="https://www.facebook.com/htmlacademy">
+                      <svg class="social-icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z"/>
+                      </svg>
+                      <span class="visually-hidden">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="footer-social-button footer-social-ig" href="htps://www.instagram.com/htmlacademy/">
+                      <svg class="social-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"/>
+                        <path d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z"/>
+                      </svg>
+                      <span class="visually-hidden">Инстаграм</span>
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="footer-social-button footer-social-tw" href="https://twitter.com/htmlacademy_ru">
+                      <svg class="social-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.7 0.155143C11.2 -0.344857 12.3 0.455143 12.9 1.25514C13.4 1.05514 14 0.855143 14.6 0.655143C14.6 1.45514 14.1 2.05514 13.8 2.25514C14.5 2.45514 15 1.85514 15 1.85514C14.9 2.75514 14.1 3.55514 13.6 3.75514C13.4 10.0551 10.8 14.1551 4.7 14.0551C4.2 14.0551 4.8 14.0551 4.3 14.0551C4 14.0551 0.6 13.6551 0 12.2551C2 12.4551 3.4 11.8551 4.1 11.1551C3.3 10.8551 1.7 10.7551 1.5 8.35514C1.8 8.55514 2 8.65514 2.6 8.55514C1.5 7.75514 0.3 7.05514 0.4 5.05514C0.7 5.35514 1.3 5.55514 1.6 5.45514C1 5.25514 -0.2 2.35514 0.8 0.855143C2.4 2.55514 4.1 4.25514 7.1 4.35514C7.3 2.25514 8.1 0.855143 9.7 0.155143Z"/>
+                      </svg>
+                      <span class="visually-hidden">Twitter</span>
+                    </a>
+                  </li>
                 </ul>        
              </div>
          </section>
@@ -589,6 +638,7 @@
                     <path d="M98.2 17.9C96.6 17.9 95.3 18.7 94.6 19.9H94.5C93.9 18.7 92.7 17.9 91.1 17.9C89.7 17.9 88.6 18.6 88 19.7V18.2H86.1V28.8H88.1V23.4C88.1 21.4 89.1 20 90.7 19.9C92.2 19.9 93.1 20.9 93.1 22.5V28.8H95.1V23.2C95.1 20.8 96.5 19.9 97.7 19.9C99.2 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2 17.9Z"/>
                     <path d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"/>
                     </svg>
+                    <span class="visually-hidden">Разработано в htmlacademy</span>
                 </a>
               </div>
          </div>      
@@ -598,7 +648,7 @@
       <div class="modal modal-delivery">
         <div class="modal-delivery-title">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <button type="button" class="modal-exit">  
+          <button class="modal-exit" type="button">  
             <svg class="modal-exit-icon" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
               <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"/>
             </svg>                                             
@@ -613,42 +663,54 @@
             </p>
             <p class="modal-input-group">
               <label class="visually-modal" for="modal-email">Ваш e-mail:</label>
-              <input class="modal-form-input input-email" type="email" id="modal-email" name="e-mail" placeholder="почта" required>
+              <input class="modal-form-input input-email" type="email" id="modal-email" name="e-mail" placeholder="почта">
             </p>
             <p class="modal-input-group">
               <label class="visually-modal" for="modal-service">Что нужно привезти:</label>
               <input class="modal-form-input-service" type="text" id="modal-service" name="text-service" placeholder="В свободной форме" required>
             </p>
             <div class="modal-input-group">                  
-               <div class="buttom-number"> 
-                  <label class="visually-modal" for="modal-service">Количество:<span class="modal-visually-icon"></span></label>       
-                  <div class="quantity-conteiner">
-                      <button class="bt-minus"></button>               
-                      <input class="quantity" type="text" id="number-group" value="1" data-max-count="100">
-                      <button class="bt-plus"></button> 
-                  </div>
-               </div>              
-              </div>
+               <div class="buttom-number">                              
+                  <div class="visually-modal">
+                    <span class="how-match">Количество:</span>
+                    <div class="button-plus-minus">                                                        
+                      <button class="bt-minus" type="button"></button>
+                      <span class="visually-hidden">уменьшить количество</span>               
+                      <input class="quantity" type="number" id="number-group" value="1" min="0" max="100">
+                      <button class="bt-plus" type="button"></button> 
+                      <span class="visually-hidden">увеличить количество</span>
+                    </div>                  
+                  </div>                  
+                </div>                             
+            </div>            
             <p class="modal-input-group">
               <button class="button button-send" type="submit"><span class="property-more-botton">Отправить</span></button>
             </p>
-          </form>
+          </form>          
+          <ul>
+            <li class="modal-info">            
+              <div>
+                <button class="popover-close-info" type="button">
+                  i  
+                  <span class="visually-hidden">Дополнительная инфрмация</span>                
+                </button>
+                <div class="popover-modal">        
+                  <ul class="info-items-modal">
+                    <li class="modal-item-icon">
+                      <svg class="modal-up-icon" aria-hidden="true" focusable="false" width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H0L7 0L14 6Z" fill="black"/>
+                        </svg>
+                    </li>                  
+                    <li>                          
+                      <p class="modal-item-title">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>                                               
+                    </li>                  
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>        
       </div>
-    </div>
-    <div style="
-    display: none;
-      position: absolute;
-      width: 1440px;
-      height: 3131px;
-      margin: 0 auto;
-      background-image: url('../1999673-device-33/image/image-main/index.jpg');
-      position: absolute;
-      background-repeat: no-repeat;
-      opacity: 0.5;            
-      transform: translateY(-100%);      
-      filter: invert(1);
-      pointer-events: none;
-    "></div>  
+    </div>    
   </body>
 </html>
