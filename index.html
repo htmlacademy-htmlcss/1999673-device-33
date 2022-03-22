@@ -13,7 +13,7 @@
       <div class="wrapper">
         <div class="page-header">
           <div class="header-logo">
-            <a href="" class="header-logo-link">
+            <a class="header-logo-link">
               <svg class="header-logo-icon" aria-hidden="true" focusable="false" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z" fill="black"/>
                 <path d="M43.7298 29.1999C45.8313 29.1999 47.5325 28.3999 48.5332 27.2999L54.6374 30.7999C52.1356 34.1999 48.4331 35.9999 43.6298 35.9999C35.0238 35.9999 29.6201 30.1999 29.6201 22.6999C29.6201 15.1999 35.0238 9.3999 43.0294 9.3999C50.4345 9.3999 55.8382 15.0999 55.8382 22.6999C55.8382 23.7999 55.7381 24.7999 55.538 25.6999H37.6256C38.6263 28.2999 40.9279 29.1999 43.7298 29.1999ZM48.333 20.0999C47.5325 17.1999 45.2309 16.0999 42.9293 16.0999C40.0273 16.0999 38.126 17.4999 37.4255 20.0999H48.333Z" fill="black"/>
@@ -29,7 +29,7 @@
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-form">
-                <form method="get" action="" class="navigation-search">
+                <form method="get" class="navigation-search">
                   <label class="input-conteiner" for="form-search">
                     <input type="search" name="search" id="form-search" placeholder="Текст поиска"  class="input"/>
                   </label>
@@ -72,7 +72,7 @@
                           </svg>
                       </li>
                       <li class="cart-item">
-                        <div>
+                        <div class="cart-item-conteiner" tabindex="0">
                           <a class="cart-product-name">
                             <img class="cart-item-img" src="image/image-catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
                             <p class="cart-item-title">Любительская селфи-палка</p>
@@ -86,7 +86,7 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <div> 
+                        <div class="cart-item-conteiner" tabindex="0"> 
                           <a class="cart-product-name">                         
                             <img class="cart-item-img" src="image/image-catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
                             <p class="cart-item-title">Профессиональная селфи-палка</p>
@@ -106,7 +106,7 @@
                       <li class="cart-item-button-bag">
                         <div class="open-bag-botton">
                           <a class="open-bag" href="#" >                          
-                            <span>Открыть корзину</span>
+                            <span class="open-bag-conteiner">Открыть корзину</span>
                           </a>
                         </div>
                       </li>
@@ -348,7 +348,7 @@
                 <a class="catalog-categories-link" href="#">
                   <div class="catalog-categories-conteiner">
                     <div class="monopods-for-selfies"></div>                       
-                    <p class="catalog-title">Моноподы для селфи</p>
+                    <p class="catalog-title">Моноподы <br> для селфи</p>
                   </div>
                 </a>
               </li>
@@ -392,11 +392,11 @@
            <div class="tabs-conteiner">                         
               <div class="tabs">                
                 <input class="service-input" id="tab1" type="radio" name="tabs" checked> 
-                <label class="service-tabs" for="tab1"><span class="service-tabs-name">Доставка</span></label> 
+                <label class="service-tabs" for="tab1" tabindex="0"><span class="service-tabs-name">Доставка</span></label> 
                 <input id="tab2" type="radio" name="tabs"> 
-                <label class="service-tabs" for="tab2"><span class="service-tabs-name">Гарантия</span></label> 
+                <label class="service-tabs" for="tab2" tabindex="0"><span class="service-tabs-name">Гарантия</span></label> 
                 <input id="tab3" type="radio" name="tabs"> 
-                <label class="service-tabs" for="tab3"><span class="service-tabs-name">Кредит</span></label>            
+                <label class="service-tabs" for="tab3" tabindex="0"><span class="service-tabs-name">Кредит</span></label>            
               </div>                
               <div class="services-tab" id="content1">
                 <div class="services-description-box">
@@ -476,7 +476,7 @@
           </section>               
           <section class="delivery-container">
             <h2 class="visually-hidden">Дополнительные услуги интернет-магазина</h2>
-            <div class="conteiner-delivery">
+            <div class="conteiner-delivery" tabindex="0">
               <a class="delivery-link-service">
                <div class="delivery">
                   <div class="delivery-icon">
@@ -670,17 +670,18 @@
               <input class="modal-form-input-service" type="text" id="modal-service" name="text-service" placeholder="В свободной форме" required>
             </p>
             <div class="modal-input-group">                  
-               <div class="buttom-number"> 
-                  <label class="visually-modal" for="number-group">Количество:                                         
-                    <div class="quantity-conteiner">
+               <div class="buttom-number">
+                  <div class="quantity-conteiner">             
+                    <div class="visually-modal">
+                      <span class="how-match">Количество:</span>                                                          
                       <button class="bt-minus" type="button"></button>
                       <span class="visually-hidden">уменьшить количество</span>               
                       <input class="quantity" type="text" id="number-group" value="1" data-max-count="100">
                       <button class="bt-plus" type="button"></button> 
-                      <span class="visually-hidden">увеличить количество</span>
+                      <span class="visually-hidden">увеличить количество</span>                    
                     </div>
-                  </label>
-               </div>                             
+                  </div>
+                </div>                             
             </div>            
             <p class="modal-input-group">
               <button class="button button-send" type="submit"><span class="property-more-botton">Отправить</span></button>

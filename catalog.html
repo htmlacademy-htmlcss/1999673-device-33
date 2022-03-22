@@ -28,7 +28,7 @@
           <nav class="navigation-catalog">
             <ul class="navigation-list-catalog">
               <li class="navigation-form">
-                <form method="get" action="" class="navigation-search">
+                <form method="get" class="navigation-search">
                   <label class="input-conteiner" for="form-search">
                     <input type="search" name="search" id="form-search" placeholder="Текст поиска"  class="input"/>
                   </label>
@@ -71,7 +71,7 @@
                           </svg>
                       </li>
                       <li class="cart-item">
-                        <div>
+                        <div class="cart-item-conteiner" tabindex="0">
                           <a class="cart-product-name">
                             <img class="cart-item-img" src="image/image-catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
                             <p class="cart-item-title">Любительская селфи-палка</p>
@@ -85,7 +85,7 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <div> 
+                        <div class="cart-item-conteiner" tabindex="0"> 
                           <a class="cart-product-name">                         
                             <img class="cart-item-img" src="image/image-catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
                             <p class="cart-item-title">Профессиональная селфи-палка</p>
@@ -105,7 +105,7 @@
                       <li class="cart-item-button-bag">
                         <div class="open-bag-botton">
                           <a class="open-bag" href="#" >                          
-                            <span>Открыть корзину</span>
+                            <span class="open-bag-conteiner">Открыть корзину</span>
                           </a>
                         </div>
                       </li>
@@ -119,8 +119,8 @@
             <div class="navigation-services services-catalog">              
               <ul class="navigation-catalog-list">
                 <li class="navigation-catalog-item">                  
-                  <a class="navigation-catalog-link" href="#">Каталог товаров</a>
-                  <div class="navigation-catalog-icon">   
+                  <a class="navigation-catalog-link catalog-form" href="#">Каталог товаров</a>
+                  <div class="navigation-catalog-icon icon-form">   
                     <div class="subcatalog">
                       <div class="sabcatalog-conteiner">
                         <div class="left-list">
@@ -162,14 +162,14 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
           <li class="breadcrumbs-item-icon">
-              <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z" fill="black"/>
+              <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"/>
               </svg>             
           </li>
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Каталог товаров</a></li> 
           <li class="breadcrumbs-item-icon">
-            <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z" fill="black"/>
+            <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"/>
             </svg>             
           </li>          
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Моноподы для селфи</a></li>
@@ -201,7 +201,7 @@
                     </label>
                     <label class="catalog-filter-label">
                       <span class="visually-hidden">до 5000</span>
-                      <input class="range-input range-cost" type="number" value="" name="max-price" style="width: 100px"placeholder="до 5000">
+                      <input class="range-input range-cost" type="number" value="" name="max-price" style="width: 100px" placeholder="до 5000">
                     </label>
                   </div>
                 </div>
@@ -209,14 +209,14 @@
               <fieldset class="catalog-filter-group">
                 <span class="catalog-filter-color">Цвет</span>
                 <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">                    
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="color-black" checked>
-                      <span class="control-color"></span>
-                      <span class="control-label">Черный</span>                    
-                    </label>                    
+                  <li class="catalog-filter-item">                                  
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="color-black" checked>
+                        <span class="control-color"></span>
+                        <span class="control-label">Черный</span>               
+                      </label>                    
                   </li>
-                  <li class="catalog-filter-item">
+                  <li class="catalog-filter-item">                    
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="color-white" checked>
                       <span class="control-color"></span>
@@ -280,12 +280,12 @@
               </select>
               <div class="sort-up-down">
                 <a href="#" class="button button-light">
-                  <svg class="button-light-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-light-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 0L11.5 10H0.5"/>
                   </svg>
                   <span class="visually-hidden">Сортировать вверх</span></a>
                 <a class="button button-light" href="#">
-                  <svg class="button-light-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="button-light-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 10L0.499999 9.61651e-07L11.5 0"/>
                   </svg>
                   <span class="visually-hidden">Сортировать вниз</span>
@@ -365,7 +365,7 @@
                 </div>
                 <div class="pagination-conteiner-footer">
                   <div class="pagination">
-                    <div class="pagination-block-1">
+                    <div class="pagination-block-1" tabindex="0">
                       <a class="pagination-prev">
                         <ul class="pagination-list">
                           <li class="pagination-item">                          
@@ -376,14 +376,14 @@
                     </div>
                     <div class="pagination-block-2">
                       <ul class="pagination-list-two"> 
-                        <li class="pagination-item"><a class="pagination-link pagination-current">1</a></li>
-                        <li class="pagination-item"><a class="pagination-link">2</a></li>
-                        <li class="pagination-item"><a class="pagination-link">3</a></li>
-                        <li class="pagination-item"><a class="pagination-link">...</a></li>
-                        <li class="pagination-item"><a class="pagination-link" >15</a></li>
+                        <li class="pagination-item" tabindex="0"><a class="pagination-link pagination-current">1</a></li>
+                        <li class="pagination-item" tabindex="0"><a class="pagination-link">2</a></li>
+                        <li class="pagination-item" tabindex="0"><a class="pagination-link">3</a></li>
+                        <li class="pagination-item" tabindex="0"><a class="pagination-link">...</a></li>
+                        <li class="pagination-item" tabindex="0"><a class="pagination-link" >15</a></li>
                       </ul>
                     </div>
-                    <div class="pagination-block-3">
+                    <div class="pagination-block-3" tabindex="0">
                       <a class="pagination-prev">
                         <ul class="pagination-list">
                           <li class="pagination-item">                          
