@@ -2280,7 +2280,7 @@ body {
 .tabs {
   width: 320px;
   padding-top: 65px;
-  background-image: url("../image/image-main/rectangle.svg");
+  background-image: url("../image/image-main/rektangle.svg");
   background-repeat: no-repeat;
   background-position-x: 280px;
   background-position-y: top;
@@ -2816,7 +2816,7 @@ input:checked + label {
   background-color: #f0f0f0;
   border: none;
   padding-left: 16px;
-  background-image: url("../image/image-main/rectangle-letter.svg");
+  background-image: url("../image/image-main/rektangle-letter.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
   font-family: "rubik",sans-serif;
