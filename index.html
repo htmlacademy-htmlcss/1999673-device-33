@@ -29,12 +29,14 @@
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-form">
-                <form method="get" class="navigation-search">
+                <form method="get" action="https://echo.htmlacademy.ru/" class="navigation-search">
                   <label class="input-conteiner" for="form-search">
-                    <input type="search" name="search" id="form-search" placeholder="Текст поиска"  class="input"/>
+                    <input type="search" name="search" id="form-search" placeholder="Текст поиска"  class="search-input"/>
                   </label>
                   <label class="submit-conteiner" for="form-search-button">                
-                  <input type="submit" name="search-button" id="form-search-button" value="Найти" class="submit"/>
+                  <button type="submit" name="search-button" id="form-search-button" value="Найти" class="submit">
+                    <span>Найти</span>
+                  </button>
                   </label>
                 </form>
               </li>
@@ -393,9 +395,9 @@
               <div class="tabs">                
                 <input class="service-input" id="tab1" type="radio" name="tabs" checked> 
                 <label class="service-tabs" for="tab1" tabindex="0"><span class="service-tabs-name">Доставка</span></label> 
-                <input id="tab2" type="radio" name="tabs"> 
+                <input class="service-input" id="tab2" type="radio" name="tabs"> 
                 <label class="service-tabs" for="tab2" tabindex="0"><span class="service-tabs-name">Гарантия</span></label> 
-                <input id="tab3" type="radio" name="tabs"> 
+                <input class="service-input" id="tab3" type="radio" name="tabs"> 
                 <label class="service-tabs" for="tab3" tabindex="0"><span class="service-tabs-name">Кредит</span></label>            
               </div>                
               <div class="services-tab" id="content1">
@@ -487,7 +489,7 @@
                   </div>
                   <div class="delivery-blok">         
                     <p class="delivery-link">
-                      <svg class="i-vector-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="i-vector-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.3">
                         <path d="M2 0H0V2H2V0Z"/>
                         <path d="M2 4H0V12H2V4Z"/>
@@ -543,7 +545,9 @@
                       <label class="newsletter-email" for="newsletter-email"></label>
                       <div class="form-flex">
                         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email">
-                        <input class="newsletter-button" type="button" value="Подписаться">   
+                        <button class="newsletter-button" type="submit">
+                          <span>Подписаться</span>
+                        </button>
                       </div>            
                     </form>
                   </div>
@@ -584,9 +588,21 @@
           <h2 class="visually-hidden">Услуги</h2>
             <div class="footer-sitelinks">
               <ul class="footer-sitelinks-list">
-                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Доставка</a></li>
-                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Гарантия</a></li>
-                <li class="footer-sitelinks-item"><a class="footer-sitelinks-link" href="#">Контакты</a></li>
+                <li class="footer-sitelinks-item">
+                  <a class="footer-sitelinks-link footer-delivery" href="#">
+                    <span class="sitelink-title">Доставка</span>
+                  </a>
+                </li>
+                <li class="footer-sitelinks-item">
+                  <a class="footer-sitelinks-link footer-garanti" href="#">
+                    <span class="sitelink-title">Гарантия</span>
+                  </a>
+                </li>
+                <li class="footer-sitelinks-item">
+                  <a class="footer-sitelinks-link footer-join" href="#">
+                    <span class="sitelink-title">Контакты</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="footer-social">
@@ -594,7 +610,7 @@
                 <ul class="footer-social-list">                                    
                   <li class="footer-social-item">
                     <a class="footer-social-button footer-social-fc" href="https://www.facebook.com/htmlacademy">
-                      <svg class="social-icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="social-icon footer-social-fc" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z"/>
                       </svg>
                       <span class="visually-hidden">Facebook</span>
@@ -625,7 +641,7 @@
               <div class="htmlacademy-conteiner">
                 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
                   <svg class="html-logo" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700"/>
+                    <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
                     <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
                     <path d="M26.6 4.8H21.8V1.1H19.8V4.9H17.9V6.9H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.8H26.6V4.8Z"/>
                     <path d="M41.1 4.6C39.5 4.6 38.2 5.4 37.6 6.7H37.5C36.9 5.5 35.7 4.6 34.1 4.6C32.7 4.6 31.6 5.4 31 6.4H30.9V4.8H29V15.4H31V10C31 8 32 6.5 33.6 6.5C35.1 6.5 36 7.5 36 9.1V15.4H38V9.8C38 7.4 39.4 6.5 40.6 6.5C42.1 6.5 43 7.5 43 9.1V15.4H45V8.9C45.1 6.4 43.6 4.6 41.1 4.6Z"/>
@@ -649,41 +665,43 @@
         <div class="modal-delivery-title">
           <h2 class="modal-title">Доставка под заказ</h2>
           <button class="modal-exit" type="button">  
-            <svg class="modal-exit-icon" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+            <svg class="modal-exit-icon" tabindex="0" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
               <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"/>
             </svg>                                             
             <span class="visually-hidden">Закрыть окно</span>
           </button>
         </div>       
         <div class="modal-delivery-name">    
-          <form class="modal-delivery-form" method="post">
+          <form class="modal-delivery-form" method="post"  action="https://echo.htmlacademy.ru/">
             <p class="modal-input-group">
               <label class="visually-modal" for="modal-name">Ваше имя</label>
-              <input class="modal-form-input name-imput-icon" type="text" id="modal-name" name="name" placeholder="Введите имя" required>
+              <input class="modal-form-input name-imput-icon" type="text" size="20" id="modal-name" name="name" placeholder="Введите имя" required>
+              <span class="podpiska">Добавьте имя</span>
             </p>
             <p class="modal-input-group">
               <label class="visually-modal" for="modal-email">Ваш e-mail:</label>
               <input class="modal-form-input input-email" type="email" id="modal-email" name="e-mail" placeholder="почта">
+              <span class="podpiska-email">Забавный у вас адрес</span>
             </p>
-            <p class="modal-input-group">
+            <p class="modal-input-group group-need">
               <label class="visually-modal" for="modal-service">Что нужно привезти:</label>
               <input class="modal-form-input-service" type="text" id="modal-service" name="text-service" placeholder="В свободной форме" required>
             </p>
-            <div class="modal-input-group">                  
+            <div class="modal-input-group group-need">                  
                <div class="buttom-number">                              
                   <div class="visually-modal">
-                    <span class="how-match">Количество:</span>
+                    <label class="how-match" for="number-group">Количество:</label>
                     <div class="button-plus-minus">                                                        
                       <button class="bt-minus" type="button"></button>
                       <span class="visually-hidden">уменьшить количество</span>               
-                      <input class="quantity" type="number" id="number-group" value="1" min="0" max="100">
+                      <input class="quantity" type="number" id="number-group" value="1" min="1" max="100">
                       <button class="bt-plus" type="button"></button> 
                       <span class="visually-hidden">увеличить количество</span>
                     </div>                  
                   </div>                  
                 </div>                             
             </div>            
-            <p class="modal-input-group">
+            <p class="modal-input-group group-button">
               <button class="button button-send" type="submit"><span class="property-more-botton">Отправить</span></button>
             </p>
           </form>          
