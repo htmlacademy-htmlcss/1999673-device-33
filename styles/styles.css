@@ -3278,12 +3278,37 @@ body {
   content: attr(data-title);
 }
 
+.name-form-input {
+  display: block;
+  width: 300px;
+  height: 54px;
+  border: 3px solid #F0F0F0;
+  background-color: #F0F0F0;
+  font-family: "rubik",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color:#000000;
+  padding-left: 10px;
+  content: attr(data-title);
+}
+
 .modal-form-input:hover {
   background-color: #DCDCDC;
   border: 3px solid #DCDCDC;  
 }
 
+.name-form-input:hover {
+  background-color: #DCDCDC;
+  border: 3px solid #DCDCDC;  
+}
+
 .modal-form-input:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.name-form-input:focus {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
@@ -3368,14 +3393,14 @@ body {
   width: 300px;
 }
 
-.modal-form-input:valid {
+.name-form-input:invalid {
   box-shadow: 0 0 0 2px #FF3D3D;
-  outline: none;  
+  outline: none; 
 }
 
-
 .input-email:invalid {
-  border: 2px solid #FF3D3D;
+  box-shadow: 0 0 0 2px #FF3D3D;
+  outline: none; 
 }
 
 .input-email:invalid+.podpiska-email {  
